@@ -1,0 +1,352 @@
+2026-06-23 21:41:07,354 [INFO] ai_resume_analyzer: Initialized application config. Base Dir: /Users/pranav/Desktop/ai_resume_analyzer
+2026-06-23 21:41:07,355 [INFO] ai_resume_analyzer: Database URL: sqlite:////Users/pranav/Desktop/ai_resume_analyzer/data/analysis/resume_analyzer.db
+2026-06-23 21:41:07,355 [INFO] ai_resume_analyzer: Upload directory: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads
+2026-06-23 21:42:29,783 [INFO] ai_resume_analyzer: Initialized application config. Base Dir: /Users/pranav/Desktop/ai_resume_analyzer
+2026-06-23 21:42:29,783 [INFO] ai_resume_analyzer: Database URL: sqlite:////Users/pranav/Desktop/ai_resume_analyzer/data/analysis/resume_analyzer.db
+2026-06-23 21:42:29,783 [INFO] ai_resume_analyzer: Upload directory: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads
+2026-06-23 21:42:30,408 [WARNING] ai_resume_analyzer: GEMINI_API_KEY not found. Resume parser will use local rule-based heuristics.
+2026-06-23 21:42:30,408 [INFO] ai_resume_analyzer: Attempting to load sentence-transformers and all-MiniLM-L6-v2...
+2026-06-23 21:42:33,958 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-06-23 21:42:36,677 [INFO] sentence_transformers.SentenceTransformer: Use pytorch device_name: mps
+2026-06-23 21:42:36,993 [INFO] ai_resume_analyzer: Sentence-transformers model 'all-MiniLM-L6-v2' loaded successfully.
+2026-06-23 21:42:36,993 [WARNING] ai_resume_analyzer: GEMINI_API_KEY not found. GeminiService will use local template-based fallbacks.
+2026-06-23 21:42:37,025 [INFO] ai_resume_analyzer: Successfully created database tables.
+2026-06-23 21:43:35,784 [INFO] ai_resume_analyzer: Initialized application config. Base Dir: /Users/pranav/Desktop/ai_resume_analyzer
+2026-06-23 21:43:35,785 [INFO] ai_resume_analyzer: Database URL: sqlite:////Users/pranav/Desktop/ai_resume_analyzer/data/analysis/resume_analyzer.db
+2026-06-23 21:43:35,785 [INFO] ai_resume_analyzer: Upload directory: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads
+2026-06-23 21:43:36,678 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:43:36,693 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:43:36,722 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 200 OK"
+2026-06-23 21:43:57,542 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:43:57,562 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:43:57,598 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 200 OK"
+2026-06-23 21:44:03,155 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:44:03,855 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:45:28,989 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:45:29,011 [WARNING] ai_resume_analyzer: GEMINI_API_KEY not found. Resume parser will use local rule-based heuristics.
+2026-06-23 21:45:29,073 [INFO] ai_resume_analyzer: Successfully extracted 3429 characters from /Users/pranav/Desktop/ai_resume_analyzer/data/uploads/1782251129_Pranav_Sesha_Sai_S_Resume.pdf
+2026-06-23 21:45:29,073 [INFO] ai_resume_analyzer: Running local heuristic parser.
+2026-06-23 21:45:49,038 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:45:58,714 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:46:12,034 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:46:15,072 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:46:15,179 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:46:15,182 [INFO] ai_resume_analyzer: Attempting to load sentence-transformers and all-MiniLM-L6-v2...
+2026-06-23 21:46:18,055 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-06-23 21:46:21,106 [INFO] sentence_transformers.SentenceTransformer: Use pytorch device_name: mps
+2026-06-23 21:46:21,527 [INFO] ai_resume_analyzer: Sentence-transformers model 'all-MiniLM-L6-v2' loaded successfully.
+2026-06-23 21:46:21,527 [WARNING] ai_resume_analyzer: GEMINI_API_KEY not found. GeminiService will use local template-based fallbacks.
+2026-06-23 21:46:21,530 [INFO] ai_resume_analyzer: ATS Calculation Complete. Overall: 96.0/100. Skill: 100.0%, Keyword: 86.66666666666667%, Exp: 100.0%, Edu: 100.0%
+2026-06-23 21:46:22,645 [INFO] ai_resume_analyzer: Semantic match calculated using Sentence-Transformers: 0.4912
+2026-06-23 21:47:40,574 [INFO] ai_resume_analyzer: Initialized application config. Base Dir: /Users/pranav/Desktop/ai_resume_analyzer
+2026-06-23 21:47:40,574 [INFO] ai_resume_analyzer: Database URL: sqlite:////Users/pranav/Desktop/ai_resume_analyzer/data/analysis/resume_analyzer.db
+2026-06-23 21:47:40,574 [INFO] ai_resume_analyzer: Upload directory: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads
+2026-06-23 21:47:41,210 [WARNING] ai_resume_analyzer: GEMINI_API_KEY not found. Resume parser will use local rule-based heuristics.
+2026-06-23 21:47:41,210 [INFO] ai_resume_analyzer: Attempting to load sentence-transformers and all-MiniLM-L6-v2...
+2026-06-23 21:47:44,405 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-06-23 21:47:46,420 [INFO] ai_resume_analyzer: Initialized application config. Base Dir: /Users/pranav/Desktop/ai_resume_analyzer
+2026-06-23 21:47:46,420 [INFO] ai_resume_analyzer: Database URL: sqlite:////Users/pranav/Desktop/ai_resume_analyzer/data/analysis/resume_analyzer.db
+2026-06-23 21:47:46,420 [INFO] ai_resume_analyzer: Upload directory: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads
+2026-06-23 21:47:46,896 [WARNING] ai_resume_analyzer: GEMINI_API_KEY not found. Resume parser will use local rule-based heuristics.
+2026-06-23 21:47:46,896 [INFO] ai_resume_analyzer: Attempting to load sentence-transformers and all-MiniLM-L6-v2...
+2026-06-23 21:47:49,238 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-06-23 21:47:52,284 [INFO] sentence_transformers.SentenceTransformer: Use pytorch device_name: mps
+2026-06-23 21:47:52,609 [INFO] ai_resume_analyzer: Sentence-transformers model 'all-MiniLM-L6-v2' loaded successfully.
+2026-06-23 21:47:52,609 [WARNING] ai_resume_analyzer: GEMINI_API_KEY not found. GeminiService will use local template-based fallbacks.
+2026-06-23 21:47:52,617 [INFO] ai_resume_analyzer: Successfully created database tables.
+2026-06-23 21:48:21,446 [INFO] ai_resume_analyzer: Initialized application config. Base Dir: /Users/pranav/Desktop/ai_resume_analyzer
+2026-06-23 21:48:21,447 [INFO] ai_resume_analyzer: Database URL: sqlite:////Users/pranav/Desktop/ai_resume_analyzer/data/analysis/resume_analyzer.db
+2026-06-23 21:48:21,447 [INFO] ai_resume_analyzer: Upload directory: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads
+2026-06-23 21:48:21,970 [WARNING] ai_resume_analyzer: GEMINI_API_KEY not found. Resume parser will use local rule-based heuristics.
+2026-06-23 21:48:21,970 [INFO] ai_resume_analyzer: Attempting to load sentence-transformers and all-MiniLM-L6-v2...
+2026-06-23 21:48:24,620 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-06-23 21:48:25,491 [INFO] ai_resume_analyzer: Initialized application config. Base Dir: /Users/pranav/Desktop/ai_resume_analyzer
+2026-06-23 21:48:25,491 [INFO] ai_resume_analyzer: Database URL: sqlite:////Users/pranav/Desktop/ai_resume_analyzer/data/analysis/resume_analyzer.db
+2026-06-23 21:48:25,491 [INFO] ai_resume_analyzer: Upload directory: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads
+2026-06-23 21:48:25,857 [WARNING] ai_resume_analyzer: GEMINI_API_KEY not found. Resume parser will use local rule-based heuristics.
+2026-06-23 21:48:25,857 [INFO] ai_resume_analyzer: Attempting to load sentence-transformers and all-MiniLM-L6-v2...
+2026-06-23 21:48:28,140 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-06-23 21:48:30,836 [INFO] sentence_transformers.SentenceTransformer: Use pytorch device_name: mps
+2026-06-23 21:48:31,149 [INFO] ai_resume_analyzer: Sentence-transformers model 'all-MiniLM-L6-v2' loaded successfully.
+2026-06-23 21:48:31,149 [WARNING] ai_resume_analyzer: GEMINI_API_KEY not found. GeminiService will use local template-based fallbacks.
+2026-06-23 21:48:31,164 [INFO] ai_resume_analyzer: Successfully created database tables.
+2026-06-23 21:48:55,860 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:48:55,869 [INFO] ai_resume_analyzer: Attempting to load sentence-transformers and all-MiniLM-L6-v2...
+2026-06-23 21:48:55,869 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-06-23 21:48:58,669 [INFO] sentence_transformers.SentenceTransformer: Use pytorch device_name: mps
+2026-06-23 21:48:58,968 [INFO] ai_resume_analyzer: Sentence-transformers model 'all-MiniLM-L6-v2' loaded successfully.
+2026-06-23 21:48:58,969 [WARNING] ai_resume_analyzer: GEMINI_API_KEY not found. GeminiService will use local template-based fallbacks.
+2026-06-23 21:48:58,971 [INFO] ai_resume_analyzer: ATS Calculation Complete. Overall: 96.0/100. Skill: 100.0%, Keyword: 86.66666666666667%, Exp: 100.0%, Edu: 100.0%
+2026-06-23 21:48:59,049 [INFO] ai_resume_analyzer: Semantic match calculated using Sentence-Transformers: 0.4912
+2026-06-23 21:50:13,058 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:50:13,087 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:50:13,127 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 200 OK"
+2026-06-23 21:50:22,402 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:50:22,432 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 200 OK"
+2026-06-23 21:50:22,451 [INFO] ai_resume_analyzer: Saved uploaded resume to: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads/1782211822_Pranav_Sesha_Sai_S_Resume.pdf
+2026-06-23 21:50:22,481 [INFO] ai_resume_analyzer: Successfully extracted 3429 characters from /Users/pranav/Desktop/ai_resume_analyzer/data/uploads/1782211822_Pranav_Sesha_Sai_S_Resume.pdf
+2026-06-23 21:50:22,481 [INFO] ai_resume_analyzer: Running local heuristic parser.
+2026-06-23 21:50:22,489 [INFO] ai_resume_analyzer: Successfully saved Resume ID 2 in database.
+2026-06-23 21:50:22,491 [INFO] httpx: HTTP Request: POST http://localhost:8000/api/upload-resume "HTTP/1.1 200 OK"
+2026-06-23 21:50:22,508 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 200 OK"
+2026-06-23 21:50:27,072 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:50:27,107 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 200 OK"
+2026-06-23 21:50:27,126 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/analysis/1 "HTTP/1.1 200 OK"
+2026-06-23 21:51:24,054 [INFO] ai_resume_analyzer: Initialized application config. Base Dir: /Users/pranav/Desktop/ai_resume_analyzer
+2026-06-23 21:51:24,054 [INFO] ai_resume_analyzer: Database URL: sqlite:////Users/pranav/Desktop/ai_resume_analyzer/data/analysis/resume_analyzer.db
+2026-06-23 21:51:24,054 [INFO] ai_resume_analyzer: Upload directory: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads
+2026-06-23 21:51:24,688 [WARNING] ai_resume_analyzer: GEMINI_API_KEY not found. Resume parser will use local rule-based heuristics.
+2026-06-23 21:51:24,688 [INFO] ai_resume_analyzer: Attempting to load sentence-transformers and all-MiniLM-L6-v2...
+2026-06-23 21:51:27,857 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-06-23 21:51:30,419 [INFO] ai_resume_analyzer: Initialized application config. Base Dir: /Users/pranav/Desktop/ai_resume_analyzer
+2026-06-23 21:51:30,419 [INFO] ai_resume_analyzer: Database URL: sqlite:////Users/pranav/Desktop/ai_resume_analyzer/data/analysis/resume_analyzer.db
+2026-06-23 21:51:30,419 [INFO] ai_resume_analyzer: Upload directory: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads
+2026-06-23 21:51:30,854 [WARNING] ai_resume_analyzer: GEMINI_API_KEY not found. Resume parser will use local rule-based heuristics.
+2026-06-23 21:51:30,854 [INFO] ai_resume_analyzer: Attempting to load sentence-transformers and all-MiniLM-L6-v2...
+2026-06-23 21:51:33,143 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-06-23 21:51:35,827 [INFO] sentence_transformers.SentenceTransformer: Use pytorch device_name: mps
+2026-06-23 21:51:36,151 [INFO] ai_resume_analyzer: Sentence-transformers model 'all-MiniLM-L6-v2' loaded successfully.
+2026-06-23 21:51:36,152 [WARNING] ai_resume_analyzer: GEMINI_API_KEY not found. GeminiService will use local template-based fallbacks.
+2026-06-23 21:51:36,166 [INFO] ai_resume_analyzer: Successfully created database tables.
+2026-06-23 21:51:40,254 [INFO] ai_resume_analyzer: Initialized application config. Base Dir: /Users/pranav/Desktop/ai_resume_analyzer
+2026-06-23 21:51:40,254 [INFO] ai_resume_analyzer: Database URL: sqlite:////Users/pranav/Desktop/ai_resume_analyzer/data/analysis/resume_analyzer.db
+2026-06-23 21:51:40,254 [INFO] ai_resume_analyzer: Upload directory: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads
+2026-06-23 21:51:40,695 [WARNING] ai_resume_analyzer: GEMINI_API_KEY not found. Resume parser will use local rule-based heuristics.
+2026-06-23 21:51:40,695 [INFO] ai_resume_analyzer: Attempting to load sentence-transformers and all-MiniLM-L6-v2...
+2026-06-23 21:51:42,942 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-06-23 21:51:45,337 [INFO] ai_resume_analyzer: Initialized application config. Base Dir: /Users/pranav/Desktop/ai_resume_analyzer
+2026-06-23 21:51:45,337 [INFO] ai_resume_analyzer: Database URL: sqlite:////Users/pranav/Desktop/ai_resume_analyzer/data/analysis/resume_analyzer.db
+2026-06-23 21:51:45,337 [INFO] ai_resume_analyzer: Upload directory: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads
+2026-06-23 21:51:45,756 [WARNING] ai_resume_analyzer: GEMINI_API_KEY not found. Resume parser will use local rule-based heuristics.
+2026-06-23 21:51:45,756 [INFO] ai_resume_analyzer: Attempting to load sentence-transformers and all-MiniLM-L6-v2...
+2026-06-23 21:51:48,042 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-06-23 21:51:50,824 [INFO] sentence_transformers.SentenceTransformer: Use pytorch device_name: mps
+2026-06-23 21:51:51,126 [INFO] ai_resume_analyzer: Sentence-transformers model 'all-MiniLM-L6-v2' loaded successfully.
+2026-06-23 21:51:51,127 [WARNING] ai_resume_analyzer: GEMINI_API_KEY not found. GeminiService will use local template-based fallbacks.
+2026-06-23 21:51:51,140 [INFO] ai_resume_analyzer: Successfully created database tables.
+2026-06-23 21:51:54,419 [INFO] ai_resume_analyzer: Initialized application config. Base Dir: /Users/pranav/Desktop/ai_resume_analyzer
+2026-06-23 21:51:54,419 [INFO] ai_resume_analyzer: Database URL: sqlite:////Users/pranav/Desktop/ai_resume_analyzer/data/analysis/resume_analyzer.db
+2026-06-23 21:51:54,419 [INFO] ai_resume_analyzer: Upload directory: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads
+2026-06-23 21:51:54,837 [WARNING] ai_resume_analyzer: GEMINI_API_KEY not found. Resume parser will use local rule-based heuristics.
+2026-06-23 21:51:54,837 [INFO] ai_resume_analyzer: Attempting to load sentence-transformers and all-MiniLM-L6-v2...
+2026-06-23 21:51:57,092 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-06-23 21:51:59,932 [INFO] sentence_transformers.SentenceTransformer: Use pytorch device_name: mps
+2026-06-23 21:52:00,174 [INFO] ai_resume_analyzer: Sentence-transformers model 'all-MiniLM-L6-v2' loaded successfully.
+2026-06-23 21:52:00,175 [WARNING] ai_resume_analyzer: GEMINI_API_KEY not found. GeminiService will use local template-based fallbacks.
+2026-06-23 21:52:00,197 [INFO] ai_resume_analyzer: Successfully created database tables.
+2026-06-23 21:52:21,624 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:52:21,640 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:52:21,667 [ERROR] ai_resume_analyzer: Database session error: (sqlite3.OperationalError) no such column: analyses.candidate_metrics
+[SQL: SELECT analyses.analysis_id AS analyses_analysis_id, analyses.resume_id AS analyses_resume_id, analyses.job_title AS analyses_job_title, analyses.job_description AS analyses_job_description, analyses.ats_score AS analyses_ats_score, analyses.skill_match_score AS analyses_skill_match_score, analyses.keyword_match_score AS analyses_keyword_match_score, analyses.experience_match_score AS analyses_experience_match_score, analyses.education_match_score AS analyses_education_match_score, analyses.semantic_score AS analyses_semantic_score, analyses.skills_present AS analyses_skills_present, analyses.missing_skills AS analyses_missing_skills, analyses.learning_path AS analyses_learning_path, analyses.suggestions AS analyses_suggestions, analyses.interview_questions AS analyses_interview_questions, analyses.candidate_metrics AS analyses_candidate_metrics, analyses.job_metrics AS analyses_job_metrics, analyses.created_at AS analyses_created_at 
+FROM analyses ORDER BY analyses.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-23 21:52:21,668 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 500 Internal Server Error"
+2026-06-23 21:52:29,142 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:52:29,165 [ERROR] ai_resume_analyzer: Database session error: (sqlite3.OperationalError) no such column: analyses.candidate_metrics
+[SQL: SELECT analyses.analysis_id AS analyses_analysis_id, analyses.resume_id AS analyses_resume_id, analyses.job_title AS analyses_job_title, analyses.job_description AS analyses_job_description, analyses.ats_score AS analyses_ats_score, analyses.skill_match_score AS analyses_skill_match_score, analyses.keyword_match_score AS analyses_keyword_match_score, analyses.experience_match_score AS analyses_experience_match_score, analyses.education_match_score AS analyses_education_match_score, analyses.semantic_score AS analyses_semantic_score, analyses.skills_present AS analyses_skills_present, analyses.missing_skills AS analyses_missing_skills, analyses.learning_path AS analyses_learning_path, analyses.suggestions AS analyses_suggestions, analyses.interview_questions AS analyses_interview_questions, analyses.candidate_metrics AS analyses_candidate_metrics, analyses.job_metrics AS analyses_job_metrics, analyses.created_at AS analyses_created_at 
+FROM analyses ORDER BY analyses.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-23 21:52:29,165 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 500 Internal Server Error"
+2026-06-23 21:52:29,187 [INFO] ai_resume_analyzer: Saved uploaded resume to: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads/1782211949_Pranav_Sesha_Sai_S_Resume.pdf
+2026-06-23 21:52:29,215 [INFO] ai_resume_analyzer: Successfully extracted 3429 characters from /Users/pranav/Desktop/ai_resume_analyzer/data/uploads/1782211949_Pranav_Sesha_Sai_S_Resume.pdf
+2026-06-23 21:52:29,215 [INFO] ai_resume_analyzer: Running local heuristic parser.
+2026-06-23 21:52:29,224 [INFO] ai_resume_analyzer: Successfully saved Resume ID 3 in database.
+2026-06-23 21:52:29,227 [INFO] httpx: HTTP Request: POST http://localhost:8000/api/upload-resume "HTTP/1.1 200 OK"
+2026-06-23 21:52:29,242 [ERROR] ai_resume_analyzer: Database session error: (sqlite3.OperationalError) no such column: analyses.candidate_metrics
+[SQL: SELECT analyses.analysis_id AS analyses_analysis_id, analyses.resume_id AS analyses_resume_id, analyses.job_title AS analyses_job_title, analyses.job_description AS analyses_job_description, analyses.ats_score AS analyses_ats_score, analyses.skill_match_score AS analyses_skill_match_score, analyses.keyword_match_score AS analyses_keyword_match_score, analyses.experience_match_score AS analyses_experience_match_score, analyses.education_match_score AS analyses_education_match_score, analyses.semantic_score AS analyses_semantic_score, analyses.skills_present AS analyses_skills_present, analyses.missing_skills AS analyses_missing_skills, analyses.learning_path AS analyses_learning_path, analyses.suggestions AS analyses_suggestions, analyses.interview_questions AS analyses_interview_questions, analyses.candidate_metrics AS analyses_candidate_metrics, analyses.job_metrics AS analyses_job_metrics, analyses.created_at AS analyses_created_at 
+FROM analyses ORDER BY analyses.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-23 21:52:29,243 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 500 Internal Server Error"
+2026-06-23 21:52:36,964 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:52:36,985 [ERROR] ai_resume_analyzer: Database session error: (sqlite3.OperationalError) no such column: analyses.candidate_metrics
+[SQL: SELECT analyses.analysis_id AS analyses_analysis_id, analyses.resume_id AS analyses_resume_id, analyses.job_title AS analyses_job_title, analyses.job_description AS analyses_job_description, analyses.ats_score AS analyses_ats_score, analyses.skill_match_score AS analyses_skill_match_score, analyses.keyword_match_score AS analyses_keyword_match_score, analyses.experience_match_score AS analyses_experience_match_score, analyses.education_match_score AS analyses_education_match_score, analyses.semantic_score AS analyses_semantic_score, analyses.skills_present AS analyses_skills_present, analyses.missing_skills AS analyses_missing_skills, analyses.learning_path AS analyses_learning_path, analyses.suggestions AS analyses_suggestions, analyses.interview_questions AS analyses_interview_questions, analyses.candidate_metrics AS analyses_candidate_metrics, analyses.job_metrics AS analyses_job_metrics, analyses.created_at AS analyses_created_at 
+FROM analyses ORDER BY analyses.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-23 21:52:36,985 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 500 Internal Server Error"
+2026-06-23 21:52:53,452 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:52:53,473 [ERROR] ai_resume_analyzer: Database session error: (sqlite3.OperationalError) no such column: analyses.candidate_metrics
+[SQL: SELECT analyses.analysis_id AS analyses_analysis_id, analyses.resume_id AS analyses_resume_id, analyses.job_title AS analyses_job_title, analyses.job_description AS analyses_job_description, analyses.ats_score AS analyses_ats_score, analyses.skill_match_score AS analyses_skill_match_score, analyses.keyword_match_score AS analyses_keyword_match_score, analyses.experience_match_score AS analyses_experience_match_score, analyses.education_match_score AS analyses_education_match_score, analyses.semantic_score AS analyses_semantic_score, analyses.skills_present AS analyses_skills_present, analyses.missing_skills AS analyses_missing_skills, analyses.learning_path AS analyses_learning_path, analyses.suggestions AS analyses_suggestions, analyses.interview_questions AS analyses_interview_questions, analyses.candidate_metrics AS analyses_candidate_metrics, analyses.job_metrics AS analyses_job_metrics, analyses.created_at AS analyses_created_at 
+FROM analyses ORDER BY analyses.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-23 21:52:53,474 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 500 Internal Server Error"
+2026-06-23 21:52:56,177 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:52:56,197 [ERROR] ai_resume_analyzer: Database session error: (sqlite3.OperationalError) no such column: analyses.candidate_metrics
+[SQL: SELECT analyses.analysis_id AS analyses_analysis_id, analyses.resume_id AS analyses_resume_id, analyses.job_title AS analyses_job_title, analyses.job_description AS analyses_job_description, analyses.ats_score AS analyses_ats_score, analyses.skill_match_score AS analyses_skill_match_score, analyses.keyword_match_score AS analyses_keyword_match_score, analyses.experience_match_score AS analyses_experience_match_score, analyses.education_match_score AS analyses_education_match_score, analyses.semantic_score AS analyses_semantic_score, analyses.skills_present AS analyses_skills_present, analyses.missing_skills AS analyses_missing_skills, analyses.learning_path AS analyses_learning_path, analyses.suggestions AS analyses_suggestions, analyses.interview_questions AS analyses_interview_questions, analyses.candidate_metrics AS analyses_candidate_metrics, analyses.job_metrics AS analyses_job_metrics, analyses.created_at AS analyses_created_at 
+FROM analyses ORDER BY analyses.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-23 21:52:56,198 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 500 Internal Server Error"
+2026-06-23 21:53:09,589 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:53:09,612 [ERROR] ai_resume_analyzer: Database session error: (sqlite3.OperationalError) no such column: analyses.candidate_metrics
+[SQL: SELECT analyses.analysis_id AS analyses_analysis_id, analyses.resume_id AS analyses_resume_id, analyses.job_title AS analyses_job_title, analyses.job_description AS analyses_job_description, analyses.ats_score AS analyses_ats_score, analyses.skill_match_score AS analyses_skill_match_score, analyses.keyword_match_score AS analyses_keyword_match_score, analyses.experience_match_score AS analyses_experience_match_score, analyses.education_match_score AS analyses_education_match_score, analyses.semantic_score AS analyses_semantic_score, analyses.skills_present AS analyses_skills_present, analyses.missing_skills AS analyses_missing_skills, analyses.learning_path AS analyses_learning_path, analyses.suggestions AS analyses_suggestions, analyses.interview_questions AS analyses_interview_questions, analyses.candidate_metrics AS analyses_candidate_metrics, analyses.job_metrics AS analyses_job_metrics, analyses.created_at AS analyses_created_at 
+FROM analyses ORDER BY analyses.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-23 21:53:09,613 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 500 Internal Server Error"
+2026-06-23 21:53:09,744 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:53:09,761 [ERROR] ai_resume_analyzer: Database session error: (sqlite3.OperationalError) no such column: analyses.candidate_metrics
+[SQL: SELECT analyses.analysis_id AS analyses_analysis_id, analyses.resume_id AS analyses_resume_id, analyses.job_title AS analyses_job_title, analyses.job_description AS analyses_job_description, analyses.ats_score AS analyses_ats_score, analyses.skill_match_score AS analyses_skill_match_score, analyses.keyword_match_score AS analyses_keyword_match_score, analyses.experience_match_score AS analyses_experience_match_score, analyses.education_match_score AS analyses_education_match_score, analyses.semantic_score AS analyses_semantic_score, analyses.skills_present AS analyses_skills_present, analyses.missing_skills AS analyses_missing_skills, analyses.learning_path AS analyses_learning_path, analyses.suggestions AS analyses_suggestions, analyses.interview_questions AS analyses_interview_questions, analyses.candidate_metrics AS analyses_candidate_metrics, analyses.job_metrics AS analyses_job_metrics, analyses.created_at AS analyses_created_at 
+FROM analyses ORDER BY analyses.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-23 21:53:09,761 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 500 Internal Server Error"
+2026-06-23 21:53:09,781 [INFO] ai_resume_analyzer: ATS Calculation Complete. Overall: 96.0/100. Skill: 100.0%, Keyword: 86.66666666666667%, Exp: 100.0%, Edu: 100.0%
+2026-06-23 21:53:11,323 [INFO] ai_resume_analyzer: Semantic match calculated using Sentence-Transformers: 0.4912
+2026-06-23 21:53:11,326 [ERROR] ai_resume_analyzer: Database session error: (sqlite3.OperationalError) table analyses has no column named candidate_metrics
+[SQL: INSERT INTO analyses (resume_id, job_title, job_description, ats_score, skill_match_score, keyword_match_score, experience_match_score, education_match_score, semantic_score, skills_present, missing_skills, learning_path, suggestions, interview_questions, candidate_metrics, job_metrics, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: (3, 'Software Engineer Intern', 'Requirements:\n- Python\n- SQL\n- Pandas\n- Data Structures\n- Algorithms\n- Git\n- REST APIs\n- FastAPI\n\nResponsibilities:\n- Build backend services\n- Develop APIs\n- Analyze datasets\n- Write efficient code\n- Collaborate with engineering teams', 96.0, 100.0, 86.7, 100.0, 100.0, 49.1, '["sql", "git", "python", "pandas", "fastapi"]', '[]', '{"beginner": [{"topic": "Foundations of Docker", "description": "Learn the fundamental concepts, terminology, and core syntax of Docker.", "resource_ ... (2245 characters truncated) ... , "resource_suggestion": "Read advanced engineering blogs (e.g., Netflix, Uber tech blogs) explaining how they scale System Design in production."}]}', '{"weak_sections": [{"section": "Professional Summary", "issue": "The summary is overly generic and lacks quantifiable achievements.", "improvement":  ... (1798 characters truncated) ... eyword": "CI/CD", "category": "Methodology", "importance": "Medium"}, {"keyword": "System Design", "category": "Methodology", "importance": "High"}]}', '{"technical": [{"skill": "Python", "question": "What is the difference between a list and a tuple in Python, and when would you use each?", "difficul ... (4772 characters truncated) ... L was the optimal choice. We built it successfully, and my teammate appreciated the objective, collaborative approach to resolving the dispute.\'"}]}', '{"parsed_skills_count": 12, "parsed_experience_years": 1.5, "parsed_education_level": "bachelor"}', '{"required_experience_years": 0, "required_education_level": "bachelor", "required_skills_count": 5}', '2026-06-23 16:23:11.325461')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-23 21:53:11,328 [INFO] httpx: HTTP Request: POST http://localhost:8000/api/analyze "HTTP/1.1 500 Internal Server Error"
+2026-06-23 21:53:19,737 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:53:19,770 [ERROR] ai_resume_analyzer: Database session error: (sqlite3.OperationalError) no such column: analyses.candidate_metrics
+[SQL: SELECT analyses.analysis_id AS analyses_analysis_id, analyses.resume_id AS analyses_resume_id, analyses.job_title AS analyses_job_title, analyses.job_description AS analyses_job_description, analyses.ats_score AS analyses_ats_score, analyses.skill_match_score AS analyses_skill_match_score, analyses.keyword_match_score AS analyses_keyword_match_score, analyses.experience_match_score AS analyses_experience_match_score, analyses.education_match_score AS analyses_education_match_score, analyses.semantic_score AS analyses_semantic_score, analyses.skills_present AS analyses_skills_present, analyses.missing_skills AS analyses_missing_skills, analyses.learning_path AS analyses_learning_path, analyses.suggestions AS analyses_suggestions, analyses.interview_questions AS analyses_interview_questions, analyses.candidate_metrics AS analyses_candidate_metrics, analyses.job_metrics AS analyses_job_metrics, analyses.created_at AS analyses_created_at 
+FROM analyses ORDER BY analyses.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-23 21:53:19,771 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 500 Internal Server Error"
+2026-06-23 21:53:19,792 [INFO] ai_resume_analyzer: ATS Calculation Complete. Overall: 96.0/100. Skill: 100.0%, Keyword: 86.66666666666667%, Exp: 100.0%, Edu: 100.0%
+2026-06-23 21:53:19,877 [INFO] ai_resume_analyzer: Semantic match calculated using Sentence-Transformers: 0.4912
+2026-06-23 21:53:19,878 [ERROR] ai_resume_analyzer: Database session error: (sqlite3.OperationalError) table analyses has no column named candidate_metrics
+[SQL: INSERT INTO analyses (resume_id, job_title, job_description, ats_score, skill_match_score, keyword_match_score, experience_match_score, education_match_score, semantic_score, skills_present, missing_skills, learning_path, suggestions, interview_questions, candidate_metrics, job_metrics, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: (3, 'Software Engineer Intern', 'Requirements:\n- Python\n- SQL\n- Pandas\n- Data Structures\n- Algorithms\n- Git\n- REST APIs\n- FastAPI\n\nResponsibilities:\n- Build backend services\n- Develop APIs\n- Analyze datasets\n- Write efficient code\n- Collaborate with engineering teams', 96.0, 100.0, 86.7, 100.0, 100.0, 49.1, '["sql", "git", "python", "pandas", "fastapi"]', '[]', '{"beginner": [{"topic": "Foundations of Docker", "description": "Learn the fundamental concepts, terminology, and core syntax of Docker.", "resource_ ... (2245 characters truncated) ... , "resource_suggestion": "Read advanced engineering blogs (e.g., Netflix, Uber tech blogs) explaining how they scale System Design in production."}]}', '{"weak_sections": [{"section": "Professional Summary", "issue": "The summary is overly generic and lacks quantifiable achievements.", "improvement":  ... (1798 characters truncated) ... eyword": "CI/CD", "category": "Methodology", "importance": "Medium"}, {"keyword": "System Design", "category": "Methodology", "importance": "High"}]}', '{"technical": [{"skill": "Python", "question": "What is the difference between a list and a tuple in Python, and when would you use each?", "difficul ... (4772 characters truncated) ... L was the optimal choice. We built it successfully, and my teammate appreciated the objective, collaborative approach to resolving the dispute.\'"}]}', '{"parsed_skills_count": 12, "parsed_experience_years": 1.5, "parsed_education_level": "bachelor"}', '{"required_experience_years": 0, "required_education_level": "bachelor", "required_skills_count": 5}', '2026-06-23 16:23:19.877661')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-23 21:53:19,878 [INFO] httpx: HTTP Request: POST http://localhost:8000/api/analyze "HTTP/1.1 500 Internal Server Error"
+2026-06-23 21:55:04,075 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:55:04,096 [ERROR] ai_resume_analyzer: Database session error: (sqlite3.OperationalError) no such column: analyses.candidate_metrics
+[SQL: SELECT analyses.analysis_id AS analyses_analysis_id, analyses.resume_id AS analyses_resume_id, analyses.job_title AS analyses_job_title, analyses.job_description AS analyses_job_description, analyses.ats_score AS analyses_ats_score, analyses.skill_match_score AS analyses_skill_match_score, analyses.keyword_match_score AS analyses_keyword_match_score, analyses.experience_match_score AS analyses_experience_match_score, analyses.education_match_score AS analyses_education_match_score, analyses.semantic_score AS analyses_semantic_score, analyses.skills_present AS analyses_skills_present, analyses.missing_skills AS analyses_missing_skills, analyses.learning_path AS analyses_learning_path, analyses.suggestions AS analyses_suggestions, analyses.interview_questions AS analyses_interview_questions, analyses.candidate_metrics AS analyses_candidate_metrics, analyses.job_metrics AS analyses_job_metrics, analyses.created_at AS analyses_created_at 
+FROM analyses ORDER BY analyses.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-23 21:55:04,097 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 500 Internal Server Error"
+2026-06-23 21:55:04,119 [INFO] ai_resume_analyzer: ATS Calculation Complete. Overall: 96.0/100. Skill: 100.0%, Keyword: 86.66666666666667%, Exp: 100.0%, Edu: 100.0%
+2026-06-23 21:55:04,346 [INFO] ai_resume_analyzer: Semantic match calculated using Sentence-Transformers: 0.4912
+2026-06-23 21:55:04,348 [ERROR] ai_resume_analyzer: Database session error: (sqlite3.OperationalError) table analyses has no column named candidate_metrics
+[SQL: INSERT INTO analyses (resume_id, job_title, job_description, ats_score, skill_match_score, keyword_match_score, experience_match_score, education_match_score, semantic_score, skills_present, missing_skills, learning_path, suggestions, interview_questions, candidate_metrics, job_metrics, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: (3, 'Software Engineer Intern', 'Requirements:\n- Python\n- SQL\n- Pandas\n- Data Structures\n- Algorithms\n- Git\n- REST APIs\n- FastAPI\n\nResponsibilities:\n- Build backend services\n- Develop APIs\n- Analyze datasets\n- Write efficient code\n- Collaborate with engineering teams', 96.0, 100.0, 86.7, 100.0, 100.0, 49.1, '["sql", "git", "python", "pandas", "fastapi"]', '[]', '{"beginner": [{"topic": "Foundations of Docker", "description": "Learn the fundamental concepts, terminology, and core syntax of Docker.", "resource_ ... (2245 characters truncated) ... , "resource_suggestion": "Read advanced engineering blogs (e.g., Netflix, Uber tech blogs) explaining how they scale System Design in production."}]}', '{"weak_sections": [{"section": "Professional Summary", "issue": "The summary is overly generic and lacks quantifiable achievements.", "improvement":  ... (1798 characters truncated) ... eyword": "CI/CD", "category": "Methodology", "importance": "Medium"}, {"keyword": "System Design", "category": "Methodology", "importance": "High"}]}', '{"technical": [{"skill": "Python", "question": "What is the difference between a list and a tuple in Python, and when would you use each?", "difficul ... (4772 characters truncated) ... L was the optimal choice. We built it successfully, and my teammate appreciated the objective, collaborative approach to resolving the dispute.\'"}]}', '{"parsed_skills_count": 12, "parsed_experience_years": 1.5, "parsed_education_level": "bachelor"}', '{"required_experience_years": 0, "required_education_level": "bachelor", "required_skills_count": 5}', '2026-06-23 16:25:04.347677')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-23 21:55:04,348 [INFO] httpx: HTTP Request: POST http://localhost:8000/api/analyze "HTTP/1.1 500 Internal Server Error"
+2026-06-23 21:55:13,763 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:55:13,784 [ERROR] ai_resume_analyzer: Database session error: (sqlite3.OperationalError) no such column: analyses.candidate_metrics
+[SQL: SELECT analyses.analysis_id AS analyses_analysis_id, analyses.resume_id AS analyses_resume_id, analyses.job_title AS analyses_job_title, analyses.job_description AS analyses_job_description, analyses.ats_score AS analyses_ats_score, analyses.skill_match_score AS analyses_skill_match_score, analyses.keyword_match_score AS analyses_keyword_match_score, analyses.experience_match_score AS analyses_experience_match_score, analyses.education_match_score AS analyses_education_match_score, analyses.semantic_score AS analyses_semantic_score, analyses.skills_present AS analyses_skills_present, analyses.missing_skills AS analyses_missing_skills, analyses.learning_path AS analyses_learning_path, analyses.suggestions AS analyses_suggestions, analyses.interview_questions AS analyses_interview_questions, analyses.candidate_metrics AS analyses_candidate_metrics, analyses.job_metrics AS analyses_job_metrics, analyses.created_at AS analyses_created_at 
+FROM analyses ORDER BY analyses.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-23 21:55:13,785 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 500 Internal Server Error"
+2026-06-23 21:55:14,000 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:55:14,017 [ERROR] ai_resume_analyzer: Database session error: (sqlite3.OperationalError) no such column: analyses.candidate_metrics
+[SQL: SELECT analyses.analysis_id AS analyses_analysis_id, analyses.resume_id AS analyses_resume_id, analyses.job_title AS analyses_job_title, analyses.job_description AS analyses_job_description, analyses.ats_score AS analyses_ats_score, analyses.skill_match_score AS analyses_skill_match_score, analyses.keyword_match_score AS analyses_keyword_match_score, analyses.experience_match_score AS analyses_experience_match_score, analyses.education_match_score AS analyses_education_match_score, analyses.semantic_score AS analyses_semantic_score, analyses.skills_present AS analyses_skills_present, analyses.missing_skills AS analyses_missing_skills, analyses.learning_path AS analyses_learning_path, analyses.suggestions AS analyses_suggestions, analyses.interview_questions AS analyses_interview_questions, analyses.candidate_metrics AS analyses_candidate_metrics, analyses.job_metrics AS analyses_job_metrics, analyses.created_at AS analyses_created_at 
+FROM analyses ORDER BY analyses.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-23 21:55:14,018 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 500 Internal Server Error"
+2026-06-23 21:55:14,046 [INFO] ai_resume_analyzer: ATS Calculation Complete. Overall: 96.0/100. Skill: 100.0%, Keyword: 86.66666666666667%, Exp: 100.0%, Edu: 100.0%
+2026-06-23 21:55:14,299 [INFO] ai_resume_analyzer: Semantic match calculated using Sentence-Transformers: 0.4912
+2026-06-23 21:55:14,301 [ERROR] ai_resume_analyzer: Database session error: (sqlite3.OperationalError) table analyses has no column named candidate_metrics
+[SQL: INSERT INTO analyses (resume_id, job_title, job_description, ats_score, skill_match_score, keyword_match_score, experience_match_score, education_match_score, semantic_score, skills_present, missing_skills, learning_path, suggestions, interview_questions, candidate_metrics, job_metrics, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: (3, 'Software Engineer Intern', 'Requirements:\n- Python\n- SQL\n- Pandas\n- Data Structures\n- Algorithms\n- Git\n- REST APIs\n- FastAPI\n\nResponsibilities:\n- Build backend services\n- Develop APIs\n- Analyze datasets\n- Write efficient code\n- Collaborate with engineering teams', 96.0, 100.0, 86.7, 100.0, 100.0, 49.1, '["sql", "git", "python", "pandas", "fastapi"]', '[]', '{"beginner": [{"topic": "Foundations of Docker", "description": "Learn the fundamental concepts, terminology, and core syntax of Docker.", "resource_ ... (2245 characters truncated) ... , "resource_suggestion": "Read advanced engineering blogs (e.g., Netflix, Uber tech blogs) explaining how they scale System Design in production."}]}', '{"weak_sections": [{"section": "Professional Summary", "issue": "The summary is overly generic and lacks quantifiable achievements.", "improvement":  ... (1798 characters truncated) ... eyword": "CI/CD", "category": "Methodology", "importance": "Medium"}, {"keyword": "System Design", "category": "Methodology", "importance": "High"}]}', '{"technical": [{"skill": "Python", "question": "What is the difference between a list and a tuple in Python, and when would you use each?", "difficul ... (4772 characters truncated) ... L was the optimal choice. We built it successfully, and my teammate appreciated the objective, collaborative approach to resolving the dispute.\'"}]}', '{"parsed_skills_count": 12, "parsed_experience_years": 1.5, "parsed_education_level": "bachelor"}', '{"required_experience_years": 0, "required_education_level": "bachelor", "required_skills_count": 5}', '2026-06-23 16:25:14.301027')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-23 21:55:14,302 [INFO] httpx: HTTP Request: POST http://localhost:8000/api/analyze "HTTP/1.1 500 Internal Server Error"
+2026-06-23 21:55:21,095 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:55:21,115 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:55:21,136 [ERROR] ai_resume_analyzer: Database session error: (sqlite3.OperationalError) no such column: analyses.candidate_metrics
+[SQL: SELECT analyses.analysis_id AS analyses_analysis_id, analyses.resume_id AS analyses_resume_id, analyses.job_title AS analyses_job_title, analyses.job_description AS analyses_job_description, analyses.ats_score AS analyses_ats_score, analyses.skill_match_score AS analyses_skill_match_score, analyses.keyword_match_score AS analyses_keyword_match_score, analyses.experience_match_score AS analyses_experience_match_score, analyses.education_match_score AS analyses_education_match_score, analyses.semantic_score AS analyses_semantic_score, analyses.skills_present AS analyses_skills_present, analyses.missing_skills AS analyses_missing_skills, analyses.learning_path AS analyses_learning_path, analyses.suggestions AS analyses_suggestions, analyses.interview_questions AS analyses_interview_questions, analyses.candidate_metrics AS analyses_candidate_metrics, analyses.job_metrics AS analyses_job_metrics, analyses.created_at AS analyses_created_at 
+FROM analyses ORDER BY analyses.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-23 21:55:21,137 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 500 Internal Server Error"
+2026-06-23 21:55:26,221 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:55:26,244 [ERROR] ai_resume_analyzer: Database session error: (sqlite3.OperationalError) no such column: analyses.candidate_metrics
+[SQL: SELECT analyses.analysis_id AS analyses_analysis_id, analyses.resume_id AS analyses_resume_id, analyses.job_title AS analyses_job_title, analyses.job_description AS analyses_job_description, analyses.ats_score AS analyses_ats_score, analyses.skill_match_score AS analyses_skill_match_score, analyses.keyword_match_score AS analyses_keyword_match_score, analyses.experience_match_score AS analyses_experience_match_score, analyses.education_match_score AS analyses_education_match_score, analyses.semantic_score AS analyses_semantic_score, analyses.skills_present AS analyses_skills_present, analyses.missing_skills AS analyses_missing_skills, analyses.learning_path AS analyses_learning_path, analyses.suggestions AS analyses_suggestions, analyses.interview_questions AS analyses_interview_questions, analyses.candidate_metrics AS analyses_candidate_metrics, analyses.job_metrics AS analyses_job_metrics, analyses.created_at AS analyses_created_at 
+FROM analyses ORDER BY analyses.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-23 21:55:26,245 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 500 Internal Server Error"
+2026-06-23 21:55:26,264 [INFO] ai_resume_analyzer: Saved uploaded resume to: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads/1782212126_Pranav_Sesha_Sai_S_Resume.pdf
+2026-06-23 21:55:26,284 [INFO] ai_resume_analyzer: Successfully extracted 3429 characters from /Users/pranav/Desktop/ai_resume_analyzer/data/uploads/1782212126_Pranav_Sesha_Sai_S_Resume.pdf
+2026-06-23 21:55:26,284 [INFO] ai_resume_analyzer: Running local heuristic parser.
+2026-06-23 21:55:26,288 [ERROR] ai_resume_analyzer: Database session error: (sqlite3.OperationalError) attempt to write a readonly database
+[SQL: INSERT INTO resumes (file_name, candidate_name, email, phone, education, experience, raw_text, upload_date) VALUES (?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('Pranav_Sesha_Sai_S_Resume.pdf', 'Pranav Sesha Sai', 'pranavseshasaisetty123@gmail.com', '+91-9392550656', '[{"degree": "Degree / Coursework", "institution": "Manipal Institute of Technology Bengaluru [MIT-BLR]     (Expected Graduation: 2027)", "year": "Bachelor of Technology in Computer Science & Engineering (Minor in Computational Intelligence) | CGPA: 7.56/10"}]', '[{"job_title": "Not specified", "company": "Not specified", "years": "N/A", "description": "Not specified"}]', 'Pranav Sesha Sai  \n     Bengaluru | pranavseshasaisetty123@gmail.com  | LinkedIn | GitHub |+91-9392550656     \nComputer Science undergraduate skill ... (3193 characters truncated) ... \n \nGoogle Data Analytics Professional Certiaicate – Google (2026) \nGoogle Prompting Essentials \nIBM SkillsBuild: Introduction to Generative AI \n', '2026-06-23 16:25:26.288440')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-23 21:55:26,289 [INFO] httpx: HTTP Request: POST http://localhost:8000/api/upload-resume "HTTP/1.1 500 Internal Server Error"
+2026-06-23 21:55:36,411 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:55:36,431 [ERROR] ai_resume_analyzer: Database session error: (sqlite3.OperationalError) no such column: analyses.candidate_metrics
+[SQL: SELECT analyses.analysis_id AS analyses_analysis_id, analyses.resume_id AS analyses_resume_id, analyses.job_title AS analyses_job_title, analyses.job_description AS analyses_job_description, analyses.ats_score AS analyses_ats_score, analyses.skill_match_score AS analyses_skill_match_score, analyses.keyword_match_score AS analyses_keyword_match_score, analyses.experience_match_score AS analyses_experience_match_score, analyses.education_match_score AS analyses_education_match_score, analyses.semantic_score AS analyses_semantic_score, analyses.skills_present AS analyses_skills_present, analyses.missing_skills AS analyses_missing_skills, analyses.learning_path AS analyses_learning_path, analyses.suggestions AS analyses_suggestions, analyses.interview_questions AS analyses_interview_questions, analyses.candidate_metrics AS analyses_candidate_metrics, analyses.job_metrics AS analyses_job_metrics, analyses.created_at AS analyses_created_at 
+FROM analyses ORDER BY analyses.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-23 21:55:36,431 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 500 Internal Server Error"
+2026-06-23 21:55:36,449 [INFO] ai_resume_analyzer: Saved uploaded resume to: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads/1782212136_Pranav_Sesha_Sai_S_Resume.pdf
+2026-06-23 21:55:36,454 [INFO] ai_resume_analyzer: Successfully extracted 3429 characters from /Users/pranav/Desktop/ai_resume_analyzer/data/uploads/1782212136_Pranav_Sesha_Sai_S_Resume.pdf
+2026-06-23 21:55:36,454 [INFO] ai_resume_analyzer: Running local heuristic parser.
+2026-06-23 21:55:36,458 [ERROR] ai_resume_analyzer: Database session error: (sqlite3.OperationalError) attempt to write a readonly database
+[SQL: INSERT INTO resumes (file_name, candidate_name, email, phone, education, experience, raw_text, upload_date) VALUES (?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('Pranav_Sesha_Sai_S_Resume.pdf', 'Pranav Sesha Sai', 'pranavseshasaisetty123@gmail.com', '+91-9392550656', '[{"degree": "Degree / Coursework", "institution": "Manipal Institute of Technology Bengaluru [MIT-BLR]     (Expected Graduation: 2027)", "year": "Bachelor of Technology in Computer Science & Engineering (Minor in Computational Intelligence) | CGPA: 7.56/10"}]', '[{"job_title": "Not specified", "company": "Not specified", "years": "N/A", "description": "Not specified"}]', 'Pranav Sesha Sai  \n     Bengaluru | pranavseshasaisetty123@gmail.com  | LinkedIn | GitHub |+91-9392550656     \nComputer Science undergraduate skill ... (3193 characters truncated) ... \n \nGoogle Data Analytics Professional Certiaicate – Google (2026) \nGoogle Prompting Essentials \nIBM SkillsBuild: Introduction to Generative AI \n', '2026-06-23 16:25:36.458316')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-23 21:55:36,459 [INFO] httpx: HTTP Request: POST http://localhost:8000/api/upload-resume "HTTP/1.1 500 Internal Server Error"
+2026-06-23 21:56:16,256 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:56:16,274 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:56:16,296 [ERROR] ai_resume_analyzer: Database session error: (sqlite3.OperationalError) no such column: analyses.candidate_metrics
+[SQL: SELECT analyses.analysis_id AS analyses_analysis_id, analyses.resume_id AS analyses_resume_id, analyses.job_title AS analyses_job_title, analyses.job_description AS analyses_job_description, analyses.ats_score AS analyses_ats_score, analyses.skill_match_score AS analyses_skill_match_score, analyses.keyword_match_score AS analyses_keyword_match_score, analyses.experience_match_score AS analyses_experience_match_score, analyses.education_match_score AS analyses_education_match_score, analyses.semantic_score AS analyses_semantic_score, analyses.skills_present AS analyses_skills_present, analyses.missing_skills AS analyses_missing_skills, analyses.learning_path AS analyses_learning_path, analyses.suggestions AS analyses_suggestions, analyses.interview_questions AS analyses_interview_questions, analyses.candidate_metrics AS analyses_candidate_metrics, analyses.job_metrics AS analyses_job_metrics, analyses.created_at AS analyses_created_at 
+FROM analyses ORDER BY analyses.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-23 21:56:16,297 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 500 Internal Server Error"
+2026-06-23 21:56:20,947 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 21:56:20,966 [ERROR] ai_resume_analyzer: Database session error: (sqlite3.OperationalError) no such column: analyses.candidate_metrics
+[SQL: SELECT analyses.analysis_id AS analyses_analysis_id, analyses.resume_id AS analyses_resume_id, analyses.job_title AS analyses_job_title, analyses.job_description AS analyses_job_description, analyses.ats_score AS analyses_ats_score, analyses.skill_match_score AS analyses_skill_match_score, analyses.keyword_match_score AS analyses_keyword_match_score, analyses.experience_match_score AS analyses_experience_match_score, analyses.education_match_score AS analyses_education_match_score, analyses.semantic_score AS analyses_semantic_score, analyses.skills_present AS analyses_skills_present, analyses.missing_skills AS analyses_missing_skills, analyses.learning_path AS analyses_learning_path, analyses.suggestions AS analyses_suggestions, analyses.interview_questions AS analyses_interview_questions, analyses.candidate_metrics AS analyses_candidate_metrics, analyses.job_metrics AS analyses_job_metrics, analyses.created_at AS analyses_created_at 
+FROM analyses ORDER BY analyses.created_at DESC]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-23 21:56:20,967 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 500 Internal Server Error"
+2026-06-23 21:56:20,987 [INFO] ai_resume_analyzer: Saved uploaded resume to: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads/1782212180_Pranav_Sesha_Sai_S_Resume.pdf
+2026-06-23 21:56:20,996 [INFO] ai_resume_analyzer: Successfully extracted 3429 characters from /Users/pranav/Desktop/ai_resume_analyzer/data/uploads/1782212180_Pranav_Sesha_Sai_S_Resume.pdf
+2026-06-23 21:56:20,996 [INFO] ai_resume_analyzer: Running local heuristic parser.
+2026-06-23 21:56:21,001 [ERROR] ai_resume_analyzer: Database session error: (sqlite3.OperationalError) attempt to write a readonly database
+[SQL: INSERT INTO resumes (file_name, candidate_name, email, phone, education, experience, raw_text, upload_date) VALUES (?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('Pranav_Sesha_Sai_S_Resume.pdf', 'Pranav Sesha Sai', 'pranavseshasaisetty123@gmail.com', '+91-9392550656', '[{"degree": "Degree / Coursework", "institution": "Manipal Institute of Technology Bengaluru [MIT-BLR]     (Expected Graduation: 2027)", "year": "Bachelor of Technology in Computer Science & Engineering (Minor in Computational Intelligence) | CGPA: 7.56/10"}]', '[{"job_title": "Not specified", "company": "Not specified", "years": "N/A", "description": "Not specified"}]', 'Pranav Sesha Sai  \n     Bengaluru | pranavseshasaisetty123@gmail.com  | LinkedIn | GitHub |+91-9392550656     \nComputer Science undergraduate skill ... (3193 characters truncated) ... \n \nGoogle Data Analytics Professional Certiaicate – Google (2026) \nGoogle Prompting Essentials \nIBM SkillsBuild: Introduction to Generative AI \n', '2026-06-23 16:26:21.000754')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-06-23 21:56:21,001 [INFO] httpx: HTTP Request: POST http://localhost:8000/api/upload-resume "HTTP/1.1 500 Internal Server Error"
+2026-06-23 21:57:31,308 [INFO] ai_resume_analyzer: Initialized application config. Base Dir: /Users/pranav/Desktop/ai_resume_analyzer
+2026-06-23 21:57:31,309 [INFO] ai_resume_analyzer: Database URL: sqlite:////Users/pranav/Desktop/ai_resume_analyzer/data/analysis/resume_analyzer.db
+2026-06-23 21:57:31,309 [INFO] ai_resume_analyzer: Upload directory: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads
+2026-06-23 21:57:32,084 [WARNING] ai_resume_analyzer: GEMINI_API_KEY not found. Resume parser will use local rule-based heuristics.
+2026-06-23 21:57:32,084 [INFO] ai_resume_analyzer: Attempting to load sentence-transformers and all-MiniLM-L6-v2...
+2026-06-23 21:57:36,049 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-06-23 21:57:38,909 [INFO] sentence_transformers.SentenceTransformer: Use pytorch device_name: mps
+2026-06-23 21:57:39,277 [INFO] ai_resume_analyzer: Sentence-transformers model 'all-MiniLM-L6-v2' loaded successfully.
+2026-06-23 21:57:39,278 [WARNING] ai_resume_analyzer: GEMINI_API_KEY not found. GeminiService will use local template-based fallbacks.
+2026-06-23 21:57:39,294 [INFO] ai_resume_analyzer: Successfully created database tables.
+2026-06-23 21:59:50,757 [INFO] ai_resume_analyzer: Initialized application config. Base Dir: /Users/pranav/Desktop/ai_resume_analyzer
+2026-06-23 21:59:50,758 [INFO] ai_resume_analyzer: Database URL: sqlite:////Users/pranav/Desktop/ai_resume_analyzer/data/analysis/resume_analyzer.db
+2026-06-23 21:59:50,758 [INFO] ai_resume_analyzer: Upload directory: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads
+2026-06-23 21:59:51,221 [WARNING] ai_resume_analyzer: GEMINI_API_KEY not found. Resume parser will use local rule-based heuristics.
+2026-06-23 21:59:51,221 [INFO] ai_resume_analyzer: Attempting to load sentence-transformers and all-MiniLM-L6-v2...
+2026-06-23 21:59:53,961 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-06-23 21:59:56,650 [INFO] sentence_transformers.SentenceTransformer: Use pytorch device_name: mps
+2026-06-23 21:59:56,769 [INFO] ai_resume_analyzer: Sentence-transformers model 'all-MiniLM-L6-v2' loaded successfully.
+2026-06-23 21:59:56,769 [WARNING] ai_resume_analyzer: GEMINI_API_KEY not found. GeminiService will use local template-based fallbacks.
+2026-06-23 21:59:56,780 [INFO] ai_resume_analyzer: Successfully created database tables.
+2026-06-23 22:00:03,762 [INFO] ai_resume_analyzer: Initialized application config. Base Dir: /Users/pranav/Desktop/ai_resume_analyzer
+2026-06-23 22:00:03,763 [INFO] ai_resume_analyzer: Database URL: sqlite:////Users/pranav/Desktop/ai_resume_analyzer/data/analysis/resume_analyzer.db
+2026-06-23 22:00:03,763 [INFO] ai_resume_analyzer: Upload directory: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads
+2026-06-23 22:00:04,347 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 22:00:04,362 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 22:00:04,388 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 200 OK"
+2026-06-23 22:00:13,141 [INFO] ai_resume_analyzer: Saved uploaded resume to: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads/1782212413_1782212180_Pranav_Sesha_Sai_S_Resume.pdf
+2026-06-23 22:00:13,167 [INFO] ai_resume_analyzer: Successfully extracted 3429 characters from /Users/pranav/Desktop/ai_resume_analyzer/data/uploads/1782212413_1782212180_Pranav_Sesha_Sai_S_Resume.pdf
+2026-06-23 22:00:13,167 [INFO] ai_resume_analyzer: Running local heuristic parser.
+2026-06-23 22:00:13,190 [INFO] ai_resume_analyzer: Successfully saved Resume ID 1 in database.
+2026-06-23 22:00:14,370 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 22:00:14,385 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 22:00:14,404 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 200 OK"
+2026-06-23 22:00:17,993 [INFO] ai_resume_analyzer: ATS Calculation Complete. Overall: 93.6/100. Skill: 100.0%, Keyword: 78.57142857142857%, Exp: 100.0%, Edu: 100.0%
+2026-06-23 22:00:18,585 [INFO] ai_resume_analyzer: Semantic match calculated using Sentence-Transformers: 0.4323
+2026-06-23 22:00:18,591 [INFO] ai_resume_analyzer: Successfully saved Analysis ID 1 in database.
+2026-06-23 22:00:35,203 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 22:00:35,230 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 200 OK"
+2026-06-23 22:00:35,251 [INFO] ai_resume_analyzer: Saved uploaded resume to: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads/1782212435_Pranav_Sesha_Sai_S_Resume.pdf
+2026-06-23 22:00:35,276 [INFO] ai_resume_analyzer: Successfully extracted 3429 characters from /Users/pranav/Desktop/ai_resume_analyzer/data/uploads/1782212435_Pranav_Sesha_Sai_S_Resume.pdf
+2026-06-23 22:00:35,276 [INFO] ai_resume_analyzer: Running local heuristic parser.
+2026-06-23 22:00:35,282 [INFO] ai_resume_analyzer: Successfully saved Resume ID 2 in database.
+2026-06-23 22:00:35,283 [INFO] httpx: HTTP Request: POST http://localhost:8000/api/upload-resume "HTTP/1.1 200 OK"
+2026-06-23 22:00:35,299 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 200 OK"
+2026-06-23 22:01:05,602 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 22:01:05,635 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 200 OK"
+2026-06-23 22:01:11,290 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 22:01:11,311 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 200 OK"
+2026-06-23 22:01:11,413 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-23 22:01:11,430 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 200 OK"
+2026-06-23 22:01:11,446 [INFO] ai_resume_analyzer: ATS Calculation Complete. Overall: 94.0/100. Skill: 100.0%, Keyword: 80.0%, Exp: 100.0%, Edu: 100.0%
+2026-06-23 22:01:11,748 [INFO] ai_resume_analyzer: Semantic match calculated using Sentence-Transformers: 0.5071
+2026-06-23 22:01:11,751 [INFO] ai_resume_analyzer: Successfully saved Analysis ID 2 in database.
+2026-06-23 22:01:11,753 [INFO] httpx: HTTP Request: POST http://localhost:8000/api/analyze "HTTP/1.1 200 OK"
+2026-06-23 22:01:11,776 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 200 OK"

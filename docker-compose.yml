@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      target: backend
+    container_name: resume_analyzer_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - DATABASE_URL=sqlite:////app/data/analysis/resume_analyzer.db
+    restart: always
+
+  frontend:
+    build:
+      context: .
+      target: frontend
+    container_name: resume_analyzer_frontend
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - API_URL=http://backend:8000/api
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    depends_on:
+      - backend
+    restart: always
