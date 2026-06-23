@@ -3,6 +3,40 @@
 An AI-powered, production-grade full-stack platform designed to optimize resumes for Applicant Tracking Systems (ATS), evaluate semantic alignment, and prepare candidates for technical and behavioral interviews through interactive AI simulation.
 
 ---
+## 🎯 Business Value
+
+The platform helps job seekers:
+
+- Improve ATS compatibility
+- Identify missing skills
+- Understand resume-job alignment
+- Practice technical interviews
+- Generate targeted learning roadmaps
+
+The system reduces manual resume review effort and provides actionable feedback within seconds.
+
+---
+
+
+## 📂 Project Structure
+
+src/
+├── api/
+├── database/
+├── models/
+├── services/
+├── utils/
+├── web_app/
+
+tests/
+
+data/
+
+Dockerfile
+docker-compose.yml
+README.md
+
+---
 
 ## 🌟 Key Features
 
@@ -123,3 +157,45 @@ Returns history of all uploaded resumes and past analysis summaries.
 
 ### `GET /api/analysis/{id}`
 Retrieves a completed analysis record by ID.
+
+---
+## 🛠️ Tech Stack
+
+### Frontend
+- Streamlit
+- Plotly
+
+### Backend
+- FastAPI
+- Pydantic
+- SQLAlchemy
+
+### AI / NLP
+- Google Gemini
+- Sentence Transformers
+- TF-IDF
+- Scikit-Learn
+
+### Database
+- SQLite
+- PostgreSQL (Production Ready)
+
+### DevOps
+- Docker
+- Docker Compose
+- Pytest
+
+
+---
+##  Future Roadmap
+
+- JWT Authentication
+- Multi-user Accounts
+- Resume Version Comparison
+- Audio Mock Interviews
+- Real-time Gemini Coaching
+- PostgreSQL Cloud Deployment
+- AWS Deployment Pipeline
+
+---
+
