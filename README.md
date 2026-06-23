@@ -27,11 +27,8 @@ src/
 ├── services/
 ├── utils/
 ├── web_app/
-
 tests/
-
 data/
-
 Dockerfile
 docker-compose.yml
 README.md
