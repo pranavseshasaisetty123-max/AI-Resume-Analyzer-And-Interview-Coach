@@ -18,21 +18,25 @@ The system reduces manual resume review effort and provides actionable feedback 
 ---
 
 
-## 📂 Project Structure
+## 📁 Project Structure
 
-src/
-├── api/
-├── database/
-├── models/
-├── services/
-├── utils/
-├── web_app/
-tests/
-data/
-Dockerfile
-docker-compose.yml
-README.md
-
+```text
+├── assets/                  # Documentation assets, images, and logos
+├── data/                    # Sample resumes, job descriptions, and raw data
+├── src/                     # Core application source code
+│   ├── api/                 # API routes, endpoints, and request controllers
+│   ├── database/            # Database connections, migrations, and seeds
+│   ├── models/              # Schema definitions and data models
+│   ├── services/            # Core business logic (AI integration, parsing, ATS engine)
+│   ├── utils/               # Helper functions, constants, and logging utilities
+│   └── web_app/             # Frontend UI components or web application logic
+├── tests/                   # Unit, integration, and system tests
+├── .gitignore               # Specified untracked files to ignore
+├── Dockerfile               # Docker build instructions for the application
+├── PROJECT_SUMMARY.md       # High-level overview of project milestones
+├── README.md                # Project documentation (this file)
+├── docker-compose.yml       # Multi-container Docker application configuration
+└── requirements.txt         # Python dependencies and package versions
 ---
 
 ## 🌟 Key Features
