@@ -5,16 +5,13 @@ from src.utils.config import settings, logger
 
 class GeminiService:
     def __init__(self):
-        self.api_enabled = bool(settings.GEMINI_API_KEY)
+        # Resolve api_enabled by checking if the key is valid (not mock, and set)
+        key = settings.GEMINI_API_KEY
+        self.api_enabled = bool(key and not key.startswith("your_") and len(key) > 8)
         if self.api_enabled:
-            try:
-                genai.configure(api_key=settings.GEMINI_API_KEY)
-                logger.info("Gemini API successfully configured for GeminiService.")
-            except Exception as e:
-                logger.error(f"Failed to configure Gemini API for GeminiService: {e}")
-                self.api_enabled = False
+            logger.info("Gemini Service initialized and ready using globally configured API key.")
         else:
-            logger.warning("GEMINI_API_KEY not found. GeminiService will use local template-based fallbacks.")
+            logger.warning("GEMINI_API_KEY not configured or in Demo Mode. GeminiService will use local template-based fallbacks.")
 
     def generate_suggestions(self, resume_text: str, job_description: str) -> Dict[str, Any]:
         """Generates structured suggestions to improve the resume against a job description."""
@@ -376,3 +373,68 @@ class GeminiService:
             "intermediate": intermediate_topics,
             "advanced": advanced_topics
         }
+
+    def evaluate_answer(self, question: str, answer: str) -> str:
+        """
+        Evaluates a candidate's answer to an interview question using Gemini.
+        Returns formatted HTML with score, strengths, weaknesses, and suggestions.
+        """
+        if self.api_enabled:
+            try:
+                model = genai.GenerativeModel("gemini-1.5-flash")
+                eval_prompt = f"""
+                You are an expert technical hiring coach. Evaluate the candidate's response to the following interview question.
+                Provide constructive, actionable feedback and score their response out of 100.
+                
+                Question:
+                {question}
+                
+                Candidate's Response:
+                {answer}
+                
+                Format your response beautifully using HTML. Make it feel premium, using clean headings, lists, and a bold score.
+                Do not use standard markdown formatting. Render as pure HTML that can be placed inside an st.markdown container.
+                Wrap the response in a container with class 'custom-card accent-card-emerald'.
+                Within the card, include:
+                1. Estimated Score (formatted as a prominent stat callout e.g. <div style="font-size: 24px; font-weight: 700; color: #34d399; margin-bottom: 15px;">Estimated Score: XX/100</div>)
+                2. Key Strengths (as a bulleted list)
+                3. Key Weaknesses / Gaps (as a bulleted list)
+                4. Actionable Suggestions for Improvement (as a bulleted list, giving concrete phrasing suggestions)
+                
+                Keep the tone professional, encouraging, and highly specific.
+                """
+                response = model.generate_content(eval_prompt)
+                return response.text
+            except Exception as e:
+                logger.error(f"Failed to evaluate answer with Gemini: {e}. Falling back to simulated feedback.")
+                return self._get_mock_evaluation(question, answer)
+        else:
+            return self._get_mock_evaluation(question, answer)
+
+    def _get_mock_evaluation(self, question: str, answer: str) -> str:
+        """Generates high-quality mock/simulated coaching feedback in HTML format for Demo Mode."""
+        return f"""
+        <div class="custom-card accent-card-emerald" style="margin-top: 20px;">
+            <div class="custom-title">📝 AI Coaching Feedback (Demo Mode)</div>
+            <div style="font-size: 24px; font-weight: 700; color: #34d399; margin-bottom: 15px;">Estimated Score: 78/100</div>
+            <p style="color: #cbd5e1; font-size: 13.5px; margin-bottom: 10px;"><b>Question Practiced:</b> {question}</p>
+            <p style="color: #cbd5e1; font-size: 13.5px; margin-bottom: 15px;"><i>Note: You are running in Demo Mode. To get personalized AI feedback, configure a valid GEMINI_API_KEY.</i></p>
+            <div style="margin-top: 15px;">
+                <h4 style="color: #ffffff; font-size: 14px; margin-bottom: 8px;">💪 Key Strengths</h4>
+                <ul style="color: #cbd5e1; font-size: 13px; padding-left: 20px; margin-bottom: 15px; line-height: 1.6;">
+                    <li><b>Structure:</b> You structured your answer well, outlining the core technical details clearly.</li>
+                    <li><b>Keywords:</b> You mentioned critical keywords matching the target stack.</li>
+                </ul>
+                <h4 style="color: #ffffff; font-size: 14px; margin-bottom: 8px;">⚠️ Key Gaps</h4>
+                <ul style="color: #cbd5e1; font-size: 13px; padding-left: 20px; margin-bottom: 15px; line-height: 1.6;">
+                    <li><b>Lack of Quantification:</b> You did not quantify the results or impact of your work.</li>
+                    <li><b>STAR Method:</b> The action and result phases of your answer could be more distinct.</li>
+                </ul>
+                <h4 style="color: #ffffff; font-size: 14px; margin-bottom: 8px;">🚀 Suggestions for Improvement</h4>
+                <ul style="color: #cbd5e1; font-size: 13px; padding-left: 20px; line-height: 1.6;">
+                    <li>Instead of saying <i>'helped speed up database queries'</i>, try saying: <b>'optimized SQL indexes and refactored N+1 queries, reducing endpoint latency by 35%'</b>.</li>
+                    <li>Make sure to explicitly state the business outcome or metric that resulted from your actions.</li>
+                </ul>
+            </div>
+        </div>
+        """

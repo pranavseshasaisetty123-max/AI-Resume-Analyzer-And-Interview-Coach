@@ -6,9 +6,8 @@ from src.services.parser_service import COMMON_SKILLS_DB
 
 class ATSService:
     def __init__(self):
-        self.api_enabled = bool(settings.GEMINI_API_KEY)
-        if self.api_enabled:
-            genai.configure(api_key=settings.GEMINI_API_KEY)
+        key = settings.GEMINI_API_KEY
+        self.api_enabled = bool(key and not key.startswith("your_") and len(key) > 8)
 
     def calculate_ats_score(self, resume_data: Dict[str, Any], job_description: str) -> Dict[str, Any]:
         """

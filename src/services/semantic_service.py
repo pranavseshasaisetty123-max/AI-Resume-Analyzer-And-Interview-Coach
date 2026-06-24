@@ -78,7 +78,6 @@ class SemanticService:
 
     def _calculate_similarity_with_gemini(self, resume_text: str, job_description: str) -> float:
         """Asks Gemini to evaluate semantic similarity between resume and job description."""
-        genai.configure(api_key=settings.GEMINI_API_KEY)
         model = genai.GenerativeModel("gemini-1.5-flash")
         
         prompt = f"""

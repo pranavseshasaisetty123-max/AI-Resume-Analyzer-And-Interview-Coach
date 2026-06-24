@@ -20,14 +20,10 @@ COMMON_SKILLS_DB = [
 
 class ParserService:
     def __init__(self):
-        self.api_enabled = bool(settings.GEMINI_API_KEY)
+        key = settings.GEMINI_API_KEY
+        self.api_enabled = bool(key and not key.startswith("your_") and len(key) > 8)
         if self.api_enabled:
-            try:
-                genai.configure(api_key=settings.GEMINI_API_KEY)
-                logger.info("Gemini API successfully configured for ParserService.")
-            except Exception as e:
-                logger.error(f"Failed to configure Gemini API: {e}")
-                self.api_enabled = False
+            logger.info("ParserService initialized and ready using globally configured API key.")
         else:
             logger.warning("GEMINI_API_KEY not found. Resume parser will use local rule-based heuristics.")
 

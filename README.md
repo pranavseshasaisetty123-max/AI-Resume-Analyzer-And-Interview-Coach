@@ -77,43 +77,77 @@ graph TD
 *   Python 3.12 (Recommended for pre-built package wheels)
 *   Google Gemini API Key (Get one from Google AI Studio)
 
-### Local Setup
+### Local Setup & Environment Configuration
 
-1.  **Clone or navigate to the directory:**
+1.  **Navigate to the project directory:**
     ```bash
     cd /Users/pranav/Desktop/ai_resume_analyzer
     ```
 
-2.  **Create and activate a virtual environment:**
+2.  **Create and activate a Python virtual environment:**
     ```bash
-    python3.12 -m venv venv
+    python3 -m venv venv
     source venv/bin/activate
     ```
 
-3.  **Install dependencies:**
+3.  **Install the required dependencies:**
     ```bash
     pip install -r requirements.txt
     ```
 
-4.  **Configure environment variables:**
-    Create a `.env` file at the root of the project:
+4.  **Configure Environment Variables:**
+    The application uses a `.env` file at the root level to manage configuration keys and database connections.
+    
+    Copy the example environment template:
+    ```bash
+    cp .env.example .env
+    ```
+    
+    Open `.env` in your preferred editor and populate the variables:
     ```env
-    GEMINI_API_KEY=your_actual_gemini_api_key_here
+    # Google Gemini API Key (Required for AI suggestions and interactive coaching)
+    GEMINI_API_KEY=your_actual_api_key_here
+
+    # Database connection string (Defaults to local SQLite)
     DATABASE_URL=sqlite:///data/analysis/resume_analyzer.db
     ```
+    
+    *Note: If `GEMINI_API_KEY` is not provided, the application will automatically start up in **Demo Mode**, utilizing mock NLP responses so that all interface features remain fully interactive and testable.*
 
-5.  **Start the FastAPI Backend:**
+5.  **Start the FastAPI Backend Service:**
     ```bash
     python -m src.api.main
     ```
-    The API will start at `http://localhost:8000`. You can view the interactive Swagger docs at `http://localhost:8000/docs`.
+    The backend service will initialize the database schemas and start running at `http://localhost:8000`. You can explore the interactive API Swagger documentation at `http://localhost:8000/docs`.
 
-6.  **Start the Streamlit Frontend Dashboard:**
-    Open a new terminal, activate the virtual environment, and run:
+6.  **Start the Streamlit Dashboard Frontend:**
+    Open a new terminal session, activate the virtual environment, and run:
     ```bash
     streamlit run src/web_app/app.py
     ```
-    The web interface will launch at `http://localhost:8501`.
+    The gorgeous visual dashboard will launch in your default web browser at `http://localhost:8501`.
+
+---
+
+## 🛠️ Troubleshooting
+
+If you encounter any issues during startup or execution, review these common troubleshooting pathways:
+
+### 1. ⚠️ Startup Diagnostics Showing Red/Yellow Badges
+The Streamlit frontend runs a high-speed system health check at launch. If any badge is red:
+*   **Database: Connection Failed:**
+    *   Ensure that you have run the backend FastAPI service (`python -m src.api.main`) at least once. This initializes the SQLite database file and builds the required tables.
+    *   Check your write permissions on the project directory. The SQLite database file is created at `data/analysis/resume_analyzer.db`.
+*   **Storage: Write Blocked:**
+    *   The application requires folder write permissions to save uploaded PDF resumes in the `data/uploads` directory. Ensure the user running the script has adequate read/write permissions for the `data/` folder.
+*   **AI Engine: Demo Mode (Yellow):**
+    *   This is a warning, not an error. It indicates that the `GEMINI_API_KEY` is missing or is using the placeholder from `.env.example`.
+    *   To unlock full AI coaching feedback, bullet point rewrites, and custom learning paths, ensure you obtain a key from [Google AI Studio](https://aistudio.google.com/) and paste it correctly into your `.env` file.
+
+### 2. 🗄️ Database Lock Errors
+If you see database lock errors or SQLite exceptions under heavy usage:
+*   By default, SQLite handles concurrent database connections sequentially. If you are running multiple clients, ensure the backend FastAPI service is running. It handles connection pooling automatically through SQLAlchemy.
+*   In production environments, you can easily transition to **PostgreSQL** by changing the `DATABASE_URL` in your `.env` file (e.g., `DATABASE_URL=postgresql://user:password@localhost:5432/dbname`).
 
 ---
 
