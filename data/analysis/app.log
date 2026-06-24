@@ -684,3 +684,153 @@ FROM analyses ORDER BY analyses.created_at DESC]
 2026-06-24 09:21:40,330 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
 2026-06-24 09:21:40,341 [INFO] ai_resume_analyzer: Gemini Service initialized and ready using globally configured API key.
 2026-06-24 09:21:40,708 [ERROR] ai_resume_analyzer: Failed to evaluate answer with Gemini: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.. Falling back to simulated feedback.
+2026-06-24 09:27:17,512 [INFO] ai_resume_analyzer: Initialized application config. Base Dir: /Users/pranav/Desktop/ai_resume_analyzer
+2026-06-24 09:27:17,512 [INFO] ai_resume_analyzer: Database URL: sqlite:///data/analysis/resume_analyzer.db
+2026-06-24 09:27:17,512 [INFO] ai_resume_analyzer: Upload directory: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads
+2026-06-24 09:27:17,616 [INFO] ai_resume_analyzer: ParserService initialized and ready using globally configured API key.
+2026-06-24 09:27:17,616 [INFO] ai_resume_analyzer: Attempting to load sentence-transformers and all-MiniLM-L6-v2...
+2026-06-24 09:27:21,174 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-06-24 09:27:23,919 [INFO] sentence_transformers.SentenceTransformer: Use pytorch device_name: mps
+2026-06-24 09:27:24,297 [INFO] ai_resume_analyzer: Sentence-transformers model 'all-MiniLM-L6-v2' loaded successfully.
+2026-06-24 09:27:24,297 [INFO] ai_resume_analyzer: Gemini Service initialized and ready using globally configured API key.
+2026-06-24 09:27:24,333 [INFO] ai_resume_analyzer: Successfully created database tables.
+2026-06-24 09:27:24,403 [INFO] ai_resume_analyzer: Successfully created database tables.
+2026-06-24 09:29:34,611 [INFO] ai_resume_analyzer: Initialized application config. Base Dir: /Users/pranav/Desktop/ai_resume_analyzer
+2026-06-24 09:29:34,611 [INFO] ai_resume_analyzer: Database URL: sqlite:///data/analysis/resume_analyzer.db
+2026-06-24 09:29:34,611 [INFO] ai_resume_analyzer: Upload directory: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads
+2026-06-24 09:29:34,705 [INFO] ai_resume_analyzer: ParserService initialized and ready using globally configured API key.
+2026-06-24 09:29:34,706 [INFO] ai_resume_analyzer: Attempting to load sentence-transformers and all-MiniLM-L6-v2...
+2026-06-24 09:29:38,189 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-06-24 09:29:40,548 [INFO] ai_resume_analyzer: Initialized application config. Base Dir: /Users/pranav/Desktop/ai_resume_analyzer
+2026-06-24 09:29:40,548 [INFO] ai_resume_analyzer: Database URL: sqlite:///data/analysis/resume_analyzer.db
+2026-06-24 09:29:40,548 [INFO] ai_resume_analyzer: Upload directory: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads
+2026-06-24 09:29:40,618 [INFO] ai_resume_analyzer: ParserService initialized and ready using globally configured API key.
+2026-06-24 09:29:40,618 [INFO] ai_resume_analyzer: Attempting to load sentence-transformers and all-MiniLM-L6-v2...
+2026-06-24 09:29:43,354 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-06-24 09:29:46,568 [INFO] ai_resume_analyzer: Initialized application config. Base Dir: /Users/pranav/Desktop/ai_resume_analyzer
+2026-06-24 09:29:46,569 [INFO] ai_resume_analyzer: Database URL: sqlite:///data/analysis/resume_analyzer.db
+2026-06-24 09:29:46,569 [INFO] ai_resume_analyzer: Upload directory: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads
+2026-06-24 09:29:46,637 [INFO] ai_resume_analyzer: ParserService initialized and ready using globally configured API key.
+2026-06-24 09:29:46,637 [INFO] ai_resume_analyzer: Attempting to load sentence-transformers and all-MiniLM-L6-v2...
+2026-06-24 09:29:49,291 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-06-24 09:29:51,939 [INFO] sentence_transformers.SentenceTransformer: Use pytorch device_name: mps
+2026-06-24 09:29:52,293 [INFO] ai_resume_analyzer: Sentence-transformers model 'all-MiniLM-L6-v2' loaded successfully.
+2026-06-24 09:29:52,300 [INFO] ai_resume_analyzer: Gemini Service initialized and ready using globally configured API key.
+2026-06-24 09:29:52,329 [INFO] ai_resume_analyzer: Successfully created database tables.
+2026-06-24 09:29:52,365 [INFO] ai_resume_analyzer: Successfully created database tables.
+2026-06-24 09:29:55,039 [INFO] ai_resume_analyzer: Initialized application config. Base Dir: /Users/pranav/Desktop/ai_resume_analyzer
+2026-06-24 09:29:55,040 [INFO] ai_resume_analyzer: Database URL: sqlite:///data/analysis/resume_analyzer.db
+2026-06-24 09:29:55,040 [INFO] ai_resume_analyzer: Upload directory: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads
+2026-06-24 09:29:55,120 [INFO] ai_resume_analyzer: ParserService initialized and ready using globally configured API key.
+2026-06-24 09:29:55,121 [INFO] ai_resume_analyzer: Attempting to load sentence-transformers and all-MiniLM-L6-v2...
+2026-06-24 09:29:58,045 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-06-24 09:30:00,805 [INFO] sentence_transformers.SentenceTransformer: Use pytorch device_name: mps
+2026-06-24 09:30:01,074 [INFO] ai_resume_analyzer: Sentence-transformers model 'all-MiniLM-L6-v2' loaded successfully.
+2026-06-24 09:30:01,075 [INFO] ai_resume_analyzer: Gemini Service initialized and ready using globally configured API key.
+2026-06-24 09:30:01,089 [INFO] ai_resume_analyzer: Successfully created database tables.
+2026-06-24 09:30:01,109 [INFO] ai_resume_analyzer: Successfully created database tables.
+2026-06-24 09:30:09,212 [INFO] ai_resume_analyzer: Initialized application config. Base Dir: /Users/pranav/Desktop/ai_resume_analyzer
+2026-06-24 09:30:09,212 [INFO] ai_resume_analyzer: Database URL: sqlite:///data/analysis/resume_analyzer.db
+2026-06-24 09:30:09,212 [INFO] ai_resume_analyzer: Upload directory: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads
+2026-06-24 09:30:09,288 [INFO] ai_resume_analyzer: ParserService initialized and ready using globally configured API key.
+2026-06-24 09:30:09,288 [INFO] ai_resume_analyzer: Attempting to load sentence-transformers and all-MiniLM-L6-v2...
+2026-06-24 09:30:12,254 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-06-24 09:30:14,970 [INFO] sentence_transformers.SentenceTransformer: Use pytorch device_name: mps
+2026-06-24 09:30:15,338 [INFO] ai_resume_analyzer: Sentence-transformers model 'all-MiniLM-L6-v2' loaded successfully.
+2026-06-24 09:30:15,338 [INFO] ai_resume_analyzer: Gemini Service initialized and ready using globally configured API key.
+2026-06-24 09:30:15,353 [INFO] ai_resume_analyzer: Successfully created database tables.
+2026-06-24 09:30:15,376 [INFO] ai_resume_analyzer: Successfully created database tables.
+2026-06-24 09:30:18,834 [INFO] ai_resume_analyzer: Initialized application config. Base Dir: /Users/pranav/Desktop/ai_resume_analyzer
+2026-06-24 09:30:18,834 [INFO] ai_resume_analyzer: Database URL: sqlite:///data/analysis/resume_analyzer.db
+2026-06-24 09:30:18,834 [INFO] ai_resume_analyzer: Upload directory: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads
+2026-06-24 09:30:18,903 [INFO] ai_resume_analyzer: ParserService initialized and ready using globally configured API key.
+2026-06-24 09:30:18,903 [INFO] ai_resume_analyzer: Attempting to load sentence-transformers and all-MiniLM-L6-v2...
+2026-06-24 09:30:21,820 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-06-24 09:30:24,292 [INFO] sentence_transformers.SentenceTransformer: Use pytorch device_name: mps
+2026-06-24 09:30:24,639 [INFO] ai_resume_analyzer: Sentence-transformers model 'all-MiniLM-L6-v2' loaded successfully.
+2026-06-24 09:30:24,640 [INFO] ai_resume_analyzer: Gemini Service initialized and ready using globally configured API key.
+2026-06-24 09:30:24,660 [INFO] ai_resume_analyzer: Successfully created database tables.
+2026-06-24 09:30:24,686 [INFO] ai_resume_analyzer: Successfully created database tables.
+2026-06-24 09:34:49,913 [INFO] ai_resume_analyzer: Initialized application config. Base Dir: /Users/pranav/Desktop/ai_resume_analyzer
+2026-06-24 09:34:49,914 [INFO] ai_resume_analyzer: Database URL: sqlite:///data/analysis/resume_analyzer.db
+2026-06-24 09:34:49,914 [INFO] ai_resume_analyzer: Upload directory: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads
+2026-06-24 09:34:50,023 [INFO] ai_resume_analyzer: ParserService initialized and ready using globally configured API key.
+2026-06-24 09:34:50,023 [INFO] ai_resume_analyzer: Attempting to load sentence-transformers and all-MiniLM-L6-v2...
+2026-06-24 09:34:53,630 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-06-24 09:34:56,400 [INFO] sentence_transformers.SentenceTransformer: Use pytorch device_name: mps
+2026-06-24 09:34:56,891 [INFO] ai_resume_analyzer: Sentence-transformers model 'all-MiniLM-L6-v2' loaded successfully.
+2026-06-24 09:34:56,892 [INFO] ai_resume_analyzer: Gemini Service initialized and ready using globally configured API key.
+2026-06-24 09:34:56,913 [INFO] ai_resume_analyzer: Successfully created database tables.
+2026-06-24 09:34:57,931 [INFO] ai_resume_analyzer: Initialized application config. Base Dir: /Users/pranav/Desktop/ai_resume_analyzer
+2026-06-24 09:34:57,932 [INFO] ai_resume_analyzer: Database URL: sqlite:///data/analysis/resume_analyzer.db
+2026-06-24 09:34:57,932 [INFO] ai_resume_analyzer: Upload directory: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads
+2026-06-24 09:34:57,942 [INFO] ai_resume_analyzer: Initialized application config. Base Dir: /Users/pranav/Desktop/ai_resume_analyzer
+2026-06-24 09:34:57,942 [INFO] ai_resume_analyzer: Database URL: sqlite:///data/analysis/resume_analyzer.db
+2026-06-24 09:34:57,942 [INFO] ai_resume_analyzer: Upload directory: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads
+2026-06-24 09:34:58,057 [INFO] ai_resume_analyzer: ParserService initialized and ready using globally configured API key.
+2026-06-24 09:34:58,057 [INFO] ai_resume_analyzer: Attempting to load sentence-transformers and all-MiniLM-L6-v2...
+2026-06-24 09:34:58,279 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-24 09:34:58,344 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 200 OK"
+2026-06-24 09:34:58,357 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-24 09:35:01,304 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-06-24 09:35:03,930 [INFO] sentence_transformers.SentenceTransformer: Use pytorch device_name: mps
+2026-06-24 09:35:04,265 [INFO] ai_resume_analyzer: Sentence-transformers model 'all-MiniLM-L6-v2' loaded successfully.
+2026-06-24 09:35:04,267 [INFO] ai_resume_analyzer: Gemini Service initialized and ready using globally configured API key.
+2026-06-24 09:35:04,286 [INFO] ai_resume_analyzer: Successfully created database tables.
+2026-06-24 09:35:04,310 [INFO] ai_resume_analyzer: Successfully created database tables.
+2026-06-24 09:35:04,676 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 200 OK"
+2026-06-24 09:35:04,696 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-24 09:35:04,737 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/analysis/3 "HTTP/1.1 200 OK"
+2026-06-24 09:35:04,852 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 200 OK"
+2026-06-24 09:35:04,868 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-24 09:37:28,091 [INFO] ai_resume_analyzer: Initialized application config. Base Dir: /Users/pranav/Desktop/ai_resume_analyzer
+2026-06-24 09:37:28,094 [INFO] ai_resume_analyzer: Database URL: sqlite:///data/analysis/resume_analyzer.db
+2026-06-24 09:37:28,094 [INFO] ai_resume_analyzer: Upload directory: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads
+2026-06-24 09:37:28,181 [INFO] ai_resume_analyzer: ParserService initialized and ready using globally configured API key.
+2026-06-24 09:37:28,181 [INFO] ai_resume_analyzer: Attempting to load sentence-transformers and all-MiniLM-L6-v2...
+2026-06-24 09:37:31,456 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-06-24 09:37:34,007 [INFO] sentence_transformers.SentenceTransformer: Use pytorch device_name: mps
+2026-06-24 09:37:34,360 [INFO] ai_resume_analyzer: Sentence-transformers model 'all-MiniLM-L6-v2' loaded successfully.
+2026-06-24 09:37:34,364 [INFO] ai_resume_analyzer: Gemini Service initialized and ready using globally configured API key.
+2026-06-24 09:37:34,385 [INFO] ai_resume_analyzer: Successfully created database tables.
+2026-06-24 09:37:34,412 [INFO] ai_resume_analyzer: Successfully created database tables.
+2026-06-24 09:39:54,412 [INFO] ai_resume_analyzer: Initialized application config. Base Dir: /Users/pranav/Desktop/ai_resume_analyzer
+2026-06-24 09:39:54,413 [INFO] ai_resume_analyzer: Database URL: sqlite:///data/analysis/resume_analyzer.db
+2026-06-24 09:39:54,413 [INFO] ai_resume_analyzer: Upload directory: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads
+2026-06-24 09:39:54,526 [INFO] ai_resume_analyzer: ParserService initialized and ready using globally configured API key.
+2026-06-24 09:39:54,526 [INFO] ai_resume_analyzer: Attempting to load sentence-transformers and all-MiniLM-L6-v2...
+2026-06-24 09:39:58,031 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-06-24 09:40:00,717 [INFO] sentence_transformers.SentenceTransformer: Use pytorch device_name: mps
+2026-06-24 09:40:01,055 [INFO] ai_resume_analyzer: Sentence-transformers model 'all-MiniLM-L6-v2' loaded successfully.
+2026-06-24 09:40:01,055 [INFO] ai_resume_analyzer: Gemini Service initialized and ready using globally configured API key.
+2026-06-24 09:40:01,074 [INFO] ai_resume_analyzer: Successfully created database tables.
+2026-06-24 09:40:02,068 [INFO] ai_resume_analyzer: Initialized application config. Base Dir: /Users/pranav/Desktop/ai_resume_analyzer
+2026-06-24 09:40:02,068 [INFO] ai_resume_analyzer: Database URL: sqlite:///data/analysis/resume_analyzer.db
+2026-06-24 09:40:02,068 [INFO] ai_resume_analyzer: Upload directory: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads
+2026-06-24 09:40:02,286 [INFO] ai_resume_analyzer: ParserService initialized and ready using globally configured API key.
+2026-06-24 09:40:02,286 [INFO] ai_resume_analyzer: Attempting to load sentence-transformers and all-MiniLM-L6-v2...
+2026-06-24 09:40:02,816 [INFO] ai_resume_analyzer: Initialized application config. Base Dir: /Users/pranav/Desktop/ai_resume_analyzer
+2026-06-24 09:40:02,816 [INFO] ai_resume_analyzer: Database URL: sqlite:///data/analysis/resume_analyzer.db
+2026-06-24 09:40:02,816 [INFO] ai_resume_analyzer: Upload directory: /Users/pranav/Desktop/ai_resume_analyzer/data/uploads
+2026-06-24 09:40:03,088 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-24 09:40:03,134 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 200 OK"
+2026-06-24 09:40:03,150 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-24 09:40:05,490 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2026-06-24 09:40:08,121 [INFO] sentence_transformers.SentenceTransformer: Use pytorch device_name: mps
+2026-06-24 09:40:08,348 [INFO] ai_resume_analyzer: Sentence-transformers model 'all-MiniLM-L6-v2' loaded successfully.
+2026-06-24 09:40:08,348 [INFO] ai_resume_analyzer: Gemini Service initialized and ready using globally configured API key.
+2026-06-24 09:40:08,353 [INFO] ai_resume_analyzer: Successfully created database tables.
+2026-06-24 09:40:08,369 [INFO] ai_resume_analyzer: Successfully created database tables.
+2026-06-24 09:41:40,124 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 200 OK"
+2026-06-24 09:41:40,148 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-24 09:41:43,221 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 200 OK"
+2026-06-24 09:41:43,238 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-24 09:41:47,326 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 200 OK"
+2026-06-24 09:41:47,350 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-24 09:41:47,445 [INFO] httpx: HTTP Request: POST http://localhost:8000/api/upload-resume "HTTP/1.1 200 OK"
+2026-06-24 09:41:47,461 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 200 OK"
+2026-06-24 09:41:49,571 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 200 OK"
+2026-06-24 09:41:49,599 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"
+2026-06-24 09:41:49,652 [INFO] httpx: HTTP Request: POST http://localhost:8000/api/analyze "HTTP/1.1 200 OK"
+2026-06-24 09:41:49,712 [INFO] httpx: HTTP Request: GET http://localhost:8000/api/history "HTTP/1.1 200 OK"
+2026-06-24 09:41:49,729 [INFO] httpx: HTTP Request: GET http://localhost:8000/ "HTTP/1.1 200 OK"

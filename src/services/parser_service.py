@@ -65,7 +65,7 @@ class ParserService:
     def _parse_with_gemini(self, text: str) -> Dict[str, Any]:
         """Uses Gemini API to parse resume text into a structured JSON format."""
         # We use gemini-1.5-flash for fast, structured parsing
-        model = genai.GenerativeModel("gemini-1.5-flash")
+        model = genai.GenerativeModel(settings.GEMINI_MODEL)
         
         prompt = f"""
         You are an expert ATS (Applicant Tracking System) parser. Analyze the following resume raw text and extract the candidate's structured information.

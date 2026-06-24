@@ -9,6 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 class Settings(BaseSettings):
     # API Keys & Env
     GEMINI_API_KEY: str = ""
+    GEMINI_MODEL: str = "gemini-2.5-flash"
     DATABASE_URL: str = f"sqlite:///{BASE_DIR}/data/analysis/resume_analyzer.db"
     
     # Storage Paths

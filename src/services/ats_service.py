@@ -78,7 +78,7 @@ class ATSService:
         """Extracts skills, years of experience, and degree level required by the Job Description."""
         if self.api_enabled:
             try:
-                model = genai.GenerativeModel("gemini-1.5-flash")
+                model = genai.GenerativeModel(settings.GEMINI_MODEL)
                 prompt = f"""
                 Analyze the following job description and extract the candidate requirements.
                 

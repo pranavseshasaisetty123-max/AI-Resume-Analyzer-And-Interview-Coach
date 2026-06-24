@@ -46,6 +46,7 @@ API_URL = os.getenv("API_URL", "http://localhost:8000/api")
 
 # --- Global Gemini Configuration (Single Source of Truth) ---
 GEMINI_API_KEY = settings.GEMINI_API_KEY if DIRECT_SERVICES_AVAILABLE else os.getenv("GEMINI_API_KEY", "")
+GEMINI_MODEL = settings.GEMINI_MODEL if DIRECT_SERVICES_AVAILABLE else os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
 
 if GEMINI_API_KEY:
     try:
@@ -405,54 +406,107 @@ st.markdown("""
     }
 
     /* ==============================================================================
-       SIDEBAR PREMIUM REDESIGN (Linear & Vercel Inspired)
+       SIDEBAR PREMIUM REDESIGN (Premium Obsidian Dark Theme #0F172A)
        ============================================================================== */
-    div[data-testid="stSidebar"] {
-        background-color: #111827 !important; /* Rich obsidian charcoal background */
-        border-right: 1px solid rgba(255, 255, 255, 0.06) !important;
+    section[data-testid="stSidebar"],
+    div[data-testid="stSidebar"],
+    [data-testid="stSidebar"] > div:first-child {
+        background-color: #0F172A !important;
+        border-right: 1px solid rgba(255, 255, 255, 0.08) !important;
     }
     div[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] {
-        color: #e5e7eb !important; /* High-contrast text color */
+        color: #CBD5E1 !important; /* High-contrast slate color */
     }
     div[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] h2 {
-        font-size: 20px !important;
-        font-weight: 700 !important;
+        font-family: 'Outfit', sans-serif !important;
+        font-size: 22px !important;
+        font-weight: 800 !important;
+        color: #FFFFFF !important;
         margin-top: 15px !important;
         margin-bottom: 20px !important;
-        letter-spacing: -0.02em !important;
+        letter-spacing: -0.025em !important;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
     }
     div[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] h3 {
-        font-size: 14px !important;
+        font-family: 'Outfit', sans-serif !important;
+        font-size: 13px !important;
         font-weight: 700 !important;
-        color: #94a3b8 !important;
+        color: #FFFFFF !important; /* Headings must be white */
         text-transform: uppercase !important;
-        letter-spacing: 0.05em !important;
+        letter-spacing: 0.08em !important;
         margin-top: 25px !important;
         margin-bottom: 12px !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+        padding-bottom: 6px !important;
+    }
+
+    /* Sidebar Cards */
+    .sidebar-card {
+        background-color: #1E293B !important;
+        border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        border-radius: 16px !important;
+        padding: 16px !important;
+        margin-bottom: 16px !important;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+        transition: all 0.2s ease-in-out !important;
+    }
+    .sidebar-card:hover {
+        border-color: rgba(99, 102, 241, 0.3) !important;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    /* Status Badges */
+    .status-badge {
+        padding: 2px 8px !important;
+        border-radius: 9999px !important;
+        font-size: 11px !important;
+        font-weight: 600 !important;
+        display: inline-block !important;
+    }
+    .status-badge-green {
+        background-color: rgba(16, 185, 129, 0.15) !important;
+        color: #34D399 !important; /* High-contrast green */
+        border: 1px solid rgba(16, 185, 129, 0.3) !important;
+    }
+    .status-badge-blue {
+        background-color: rgba(56, 189, 248, 0.15) !important;
+        color: #38BDF8 !important; /* High-contrast blue */
+        border: 1px solid rgba(56, 189, 248, 0.3) !important;
+    }
+    .status-badge-yellow {
+        background-color: rgba(245, 158, 11, 0.15) !important;
+        color: #FBBF24 !important; /* High-contrast yellow */
+        border: 1px solid rgba(245, 158, 11, 0.3) !important;
+    }
+    .status-badge-red {
+        background-color: rgba(239, 68, 68, 0.15) !important;
+        color: #F87171 !important; /* High-contrast red */
+        border: 1px solid rgba(239, 68, 68, 0.3) !important;
     }
 
     /* Sidebar Button Cards (Past Analyses items) */
     div[data-testid="stSidebar"] button {
-        background-color: rgba(31, 41, 55, 0.5) !important;
-        border: 1px solid rgba(255, 255, 255, 0.07) !important;
-        color: #cbd5e1 !important;
+        background-color: #1E293B !important;
+        border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        color: #CBD5E1 !important;
         text-align: left !important;
-        padding: 10px 14px !important;
-        border-radius: 10px !important;
+        padding: 12px 16px !important;
+        border-radius: 12px !important;
         margin-bottom: 8px !important;
         font-size: 13px !important;
         font-weight: 500 !important;
         width: 100% !important;
         display: block !important;
-        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) !important;
+        transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+        white-space: pre-line !important;
     }
     div[data-testid="stSidebar"] button:hover {
-        background-color: rgba(55, 65, 81, 0.8) !important;
-        border-color: rgba(99, 102, 241, 0.4) !important;
-        color: #ffffff !important;
-        transform: translateY(-1px) !important;
-        box-shadow: 0 4px 12px rgba(99, 102, 241, 0.1) !important;
+        background-color: #243147 !important;
+        border-color: rgba(56, 189, 248, 0.5) !important;
+        color: #FFFFFF !important;
+        transform: translateY(-2px) !important;
+        box-shadow: 0 6px 20px rgba(56, 189, 248, 0.15) !important;
     }
     div[data-testid="stSidebar"] button:active {
         transform: translateY(1px) !important;
@@ -460,27 +514,29 @@ st.markdown("""
 
     /* Active Report Highlight inside History list */
     .active-history-card {
-        border-color: rgba(56, 189, 248, 0.5) !important;
-        background-color: rgba(56, 189, 248, 0.06) !important;
-        color: #38bdf8 !important;
+        border-color: #38BDF8 !important;
+        background-color: rgba(56, 189, 248, 0.08) !important;
+        color: #38BDF8 !important;
     }
 
-    /* Reset Button - Vibrant Accent Highlight */
+    /* Reset Button - Modern Gradient (Indigo to Light Blue) */
     div[data-testid="stSidebar"] button[kind="primary"] {
-        background: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%) !important;
-        color: #ffffff !important;
+        background: linear-gradient(135deg, #6366F1 0%, #38BDF8 100%) !important;
+        color: #FFFFFF !important;
         font-weight: 600 !important;
         border: none !important;
         text-align: center !important;
         padding: 12px 20px !important;
         margin-top: 10px !important;
         margin-bottom: 15px !important;
-        box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2) !important;
+        border-radius: 12px !important;
+        box-shadow: 0 4px 12px rgba(99, 102, 241, 0.25) !important;
+        transition: all 0.25s ease-in-out !important;
     }
     div[data-testid="stSidebar"] button[kind="primary"]:hover {
-        background: linear-gradient(135deg, #5a52e6 0%, #0cc0dd 100%) !important;
-        box-shadow: 0 6px 16px rgba(79, 70, 229, 0.4) !important;
-        transform: translateY(-1px) !important;
+        background: linear-gradient(135deg, #4F46E5 0%, #0EA5E9 100%) !important;
+        box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4) !important;
+        transform: translateY(-2px) !important;
     }
 
     /* Sidebar Summary Stats Grid */
@@ -491,44 +547,51 @@ st.markdown("""
         margin-bottom: 20px !important;
     }
     .sidebar-stat-card {
-        background: rgba(30, 41, 59, 0.4) !important;
-        border: 1px solid rgba(255, 255, 255, 0.05) !important;
-        padding: 10px 4px !important;
-        border-radius: 10px !important;
+        background: #1E293B !important;
+        border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        padding: 12px 4px !important;
+        border-radius: 12px !important;
         text-align: center !important;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+        transition: all 0.2s ease-in-out !important;
+    }
+    .sidebar-stat-card:hover {
+        border-color: rgba(99, 102, 241, 0.3) !important;
+        transform: translateY(-1px) !important;
     }
     .sidebar-stat-label {
         font-size: 9px !important;
         font-weight: 600 !important;
-        color: #94a3b8 !important;
+        color: #94A3B8 !important;
         text-transform: uppercase !important;
-        letter-spacing: 0.04em !important;
-        margin-bottom: 2px !important;
+        letter-spacing: 0.05em !important;
+        margin-bottom: 4px !important;
     }
     .sidebar-stat-val {
-        font-size: 13px !important;
+        font-size: 14px !important;
         font-weight: 700 !important;
-        color: #ffffff !important;
+        color: #FFFFFF !important;
     }
 
     /* Sidebar Expander Overrides */
     div[data-testid="stSidebar"] .streamlit-expanderHeader {
-        background-color: rgba(31, 41, 55, 0.35) !important;
-        border: 1px solid rgba(255, 255, 255, 0.05) !important;
-        border-radius: 10px !important;
-        padding: 10px 14px !important;
+        background-color: #1E293B !important;
+        border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        border-radius: 12px !important;
+        color: #FFFFFF !important;
+        padding: 12px 16px !important;
         font-size: 13px !important;
     }
     div[data-testid="stSidebar"] .streamlit-expanderContent {
-        background-color: rgba(17, 24, 39, 0.3) !important;
-        border-radius: 0 0 10px 10px !important;
-        padding: 14px !important;
-        border-left: 1px solid rgba(255, 255, 255, 0.05) !important;
-        border-right: 1px solid rgba(255, 255, 255, 0.05) !important;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+        background-color: #0F172A !important;
+        border-radius: 0 0 12px 12px !important;
+        padding: 16px !important;
+        border-left: 1px solid rgba(255, 255, 255, 0.08) !important;
+        border-right: 1px solid rgba(255, 255, 255, 0.08) !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
     }
 </style>
+
 """, unsafe_allow_html=True)
 
 # --- Helper Functions for API/Direct Service Calls ---
@@ -867,33 +930,33 @@ analyses = history.get("analyses", [])
 # Check backend status once to avoid multiple network calls and resolve NameError
 backend_ok = is_backend_online()
 
-st.sidebar.markdown("<h2 style='text-align: center;'>💼 Career Dashboard</h2>", unsafe_allow_html=True)
+st.sidebar.markdown("<h2 style='text-align: center; color: #FFFFFF; font-family: \"Outfit\", sans-serif; font-weight: 800; font-size: 22px; margin-top: 10px; margin-bottom: 20px;'>💼 Career Dashboard</h2>", unsafe_allow_html=True)
 
 # 1. System Diagnostics Card
-api_status_text = "🟢 Connected" if backend_ok else "🟡 Direct Mode"
-ai_status_text = "🟢 Gemini Enabled" if diag["gemini_ok"] else "🟡 Demo Mode"
-db_status_text = "🟢 Connected" if diag["db_ok"] else "🔴 Connection Error"
-storage_status_text = "🟢 Ready" if diag["storage_ok"] else "🔴 Storage Error"
+api_status_text = "Connected" if backend_ok else "Direct Mode"
+ai_status_text = "Gemini Enabled" if diag["gemini_ok"] else "Demo Mode"
+db_status_text = "Connected" if diag["db_ok"] else "Error"
+storage_status_text = "Ready" if diag["storage_ok"] else "Error"
 
 st.sidebar.markdown(f"""
-<div class="custom-card" style="padding: 16px !important; margin-bottom: 20px; background: rgba(30, 41, 59, 0.25) !important;">
-    <div style="font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px;">System Diagnostics</div>
-    <div style="display: flex; flex-direction: column; gap: 8px; font-size: 13px;">
+<div class="sidebar-card">
+    <div style="font-size: 11px; font-weight: 600; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 12px;">System Diagnostics</div>
+    <div style="display: flex; flex-direction: column; gap: 10px; font-size: 13px;">
         <div style="display: flex; justify-content: space-between; align-items: center;">
-            <span style="color: #94a3b8; font-weight: 500;">API Status:</span>
-            <span style="font-weight: 600; color: {'#34d399' if backend_ok else '#fbbf24'};">{api_status_text}</span>
+            <span class="sidebar-label">API Status:</span>
+            <span class="status-badge {'status-badge-green' if backend_ok else 'status-badge-yellow'}">{api_status_text}</span>
         </div>
         <div style="display: flex; justify-content: space-between; align-items: center;">
-            <span style="color: #94a3b8; font-weight: 500;">AI Status:</span>
-            <span style="font-weight: 600; color: {'#34d399' if diag['gemini_ok'] else '#fbbf24'};">{ai_status_text}</span>
+            <span class="sidebar-label">AI Status:</span>
+            <span class="status-badge {'status-badge-blue' if diag['gemini_ok'] else 'status-badge-yellow'}">{ai_status_text}</span>
         </div>
         <div style="display: flex; justify-content: space-between; align-items: center;">
-            <span style="color: #94a3b8; font-weight: 500;">Database:</span>
-            <span style="font-weight: 600; color: {'#34d399' if diag['db_ok'] else '#f87171'};">{db_status_text}</span>
+            <span class="sidebar-label">Database:</span>
+            <span class="status-badge {'status-badge-green' if diag['db_ok'] else 'status-badge-red'}">{db_status_text}</span>
         </div>
         <div style="display: flex; justify-content: space-between; align-items: center;">
-            <span style="color: #94a3b8; font-weight: 500;">Storage:</span>
-            <span style="font-weight: 600; color: {'#34d399' if diag['storage_ok'] else '#f87171'};">{storage_status_text}</span>
+            <span class="sidebar-label">Storage:</span>
+            <span class="status-badge {'status-badge-green' if diag['storage_ok'] else 'status-badge-red'}">{storage_status_text}</span>
         </div>
     </div>
 </div>
@@ -925,15 +988,16 @@ st.sidebar.markdown(f"""
 gemini_status_label = "Configured" if diag["gemini_ok"] else "Not Configured"
 st.sidebar.markdown("### 🔑 AI Configuration")
 st.sidebar.markdown(f"""
-<div class="custom-card" style="padding: 14px !important; margin-bottom: 15px; background: rgba(30, 41, 59, 0.15) !important;">
-    <div style="font-size: 13px; line-height: 1.5;">
-        <div style="display: flex; justify-content: space-between;">
-            <span style="color: #94a3b8;">Gemini Key:</span>
-            <span style="font-weight: 600; color: {'#34d399' if diag['gemini_ok'] else '#f87171'};">{gemini_status_label}</span>
+<div class="sidebar-card">
+    <div style="font-size: 11px; font-weight: 600; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 12px;">AI Configuration</div>
+    <div style="display: flex; flex-direction: column; gap: 10px; font-size: 13px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <span class="sidebar-label">Gemini Key:</span>
+            <span class="status-badge {'status-badge-green' if diag['gemini_ok'] else 'status-badge-red'}">{gemini_status_label}</span>
         </div>
-        <div style="display: flex; justify-content: space-between; margin-top: 4px;">
-            <span style="color: #94a3b8;">Active Mode:</span>
-            <span style="font-weight: 600; color: #ffffff;">{"Full AI Coaching" if diag["gemini_ok"] else "Mock Demo Mode"}</span>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <span class="sidebar-label">Active Mode:</span>
+            <span style="font-weight: 600; color: #FFFFFF;">{"Full AI Coaching" if diag["gemini_ok"] else "Mock Demo Mode"}</span>
         </div>
     </div>
 </div>
@@ -942,12 +1006,12 @@ st.sidebar.markdown(f"""
 # Display friendly instructions if key is missing
 if not diag["gemini_ok"]:
     st.sidebar.markdown("""
-    <div style="font-size: 12px; color: #cbd5e1; background: rgba(251, 191, 36, 0.04); border: 1px solid rgba(251, 191, 36, 0.15); padding: 12px; border-radius: 10px; line-height: 1.5; margin-bottom: 15px;">
-        <span style="font-weight: 700; color: #fbbf24;">🔑 Unlock Full AI Capabilities:</span>
+    <div style="font-size: 12px; color: #CBD5E1; background: rgba(245, 158, 11, 0.05); border: 1px solid rgba(245, 158, 11, 0.2); padding: 12px; border-radius: 12px; line-height: 1.5; margin-bottom: 15px;">
+        <span style="font-weight: 700; color: #F59E0B;">🔑 Unlock Full AI Capabilities:</span>
         <ol style="margin: 6px 0 0 16px; padding: 0; line-height: 1.6;">
-            <li>Create a <code>.env</code> file in the project root directory.</li>
+            <li>Create a <code>.env</code> file in the project root.</li>
             <li>Add your Gemini API Key:
-                <pre style="background: #090d16; padding: 6px; border-radius: 4px; margin-top: 4px; border: 1px solid rgba(255,255,255,0.08); font-size: 10px; color: #f43f5e; overflow-x: auto;">GEMINI_API_KEY=your_key</pre>
+                <pre style="background: #0F172A; padding: 8px; border-radius: 6px; margin-top: 6px; border: 1px solid rgba(255,255,255,0.08); font-size: 10px; color: #F43F5E; overflow-x: auto;">GEMINI_API_KEY=your_key</pre>
             </li>
             <li>Restart the application.</li>
         </ol>
@@ -961,10 +1025,10 @@ if analysis:
     # Render active candidate card context
     if resume_details:
         st.sidebar.markdown(f"""
-        <div class="custom-card accent-card-blue" style="padding: 15px !important; margin-bottom: 10px;">
-            <div style="font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;">Active Profile</div>
-            <div style="font-size: 14px; font-weight: 700; color: #ffffff; line-height: 1.3;">{resume_details.get('candidate_name') or 'Unknown Candidate'}</div>
-            <div style="font-size: 12px; color: #94a3b8; margin-top: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">{resume_details.get('email') or 'No email parsed'}</div>
+        <div class="sidebar-card" style="border-left: 4px solid #38BDF8 !important; padding-left: 14px !important;">
+            <div style="font-size: 11px; font-weight: 600; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;">Active Profile</div>
+            <div style="font-size: 15px; font-weight: 700; color: #FFFFFF; line-height: 1.3;">{resume_details.get('candidate_name') or 'Unknown Candidate'}</div>
+            <div style="font-size: 12px; color: #94A3B8; margin-top: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">{resume_details.get('email') or 'No email parsed'}</div>
         </div>
         """, unsafe_allow_html=True)
 
@@ -985,8 +1049,8 @@ if analyses:
         is_active = analysis and analysis.get("analysis_id") == a["analysis_id"]
         card_class = "active-history-card" if is_active else ""
         
-        # Streamlit button for history selection
-        btn_label = f"💼 {a['job_title']}\nATS Score: {a['ats_score']}%"
+        # Streamlit button for history selection - with high-contrast formatting and larger ATS score representation
+        btn_label = f"💼 {a['job_title']}\n⭐ {a['ats_score']}% ATS Compatibility"
         if st.sidebar.button(btn_label, key=f"hist_btn_{a['analysis_id']}", use_container_width=True):
             with st.spinner("Loading analysis..."):
                 st.session_state.active_analysis = APIClient.get_analysis(a['analysis_id'])
@@ -1012,7 +1076,7 @@ if analyses:
                 
     # Selectbox fallback for older analyses
     if len(analyses) > 5:
-        older_options = {f"💼 {a['job_title']} ({a['ats_score']}% ATS)": a['analysis_id'] for a in analyses[5:]}
+        older_options = {f"💼 {a['job_title']} ({a['ats_score']}% ATS)" : a['analysis_id'] for a in analyses[5:]}
         selected_older = st.sidebar.selectbox("View Older Reports:", ["-- Select Report --"] + list(older_options.keys()), key="older_reports_dropdown")
         if selected_older != "-- Select Report --":
             older_id = older_options[selected_older]
@@ -1038,7 +1102,7 @@ if analyses:
                 st.toast("Loaded past report", icon="💼")
                 st.rerun()
 else:
-    st.sidebar.markdown("<p style='font-size: 13px; color: #94a3b8; font-style: italic; text-align: center; margin: 10px 0;'>No past reports found.</p>", unsafe_allow_html=True)
+    st.sidebar.markdown("<p style='font-size: 13px; color: #94A3B8; font-style: italic; text-align: center; margin: 10px 0;'>No past reports found.</p>", unsafe_allow_html=True)
 
 # 6. Collapsible Advanced Settings (collapsible expander)
 st.sidebar.write("")
@@ -1661,7 +1725,7 @@ else:
                                     # Fallback if direct services are not available but genai is
                                     if diag["gemini_ok"]:
                                         import google.generativeai as genai
-                                        model = genai.GenerativeModel("gemini-1.5-flash")
+                                        model = genai.GenerativeModel(GEMINI_MODEL)
                                         eval_prompt = f"""
                                         You are an expert technical hiring coach. Evaluate the candidate's response to the following interview question.
                                         Provide constructive, actionable feedback and score their response out of 100.

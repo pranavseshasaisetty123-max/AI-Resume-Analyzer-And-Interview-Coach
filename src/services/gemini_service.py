@@ -49,7 +49,7 @@ class GeminiService:
     # --- Gemini Implementations ---
 
     def _generate_suggestions_with_gemini(self, resume_text: str, job_description: str) -> Dict[str, Any]:
-        model = genai.GenerativeModel("gemini-1.5-flash")
+        model = genai.GenerativeModel(settings.GEMINI_MODEL)
         
         prompt = f"""
         You are an elite career coach and resume reviewer. Compare the resume with the job description and generate specific, highly actionable improvement suggestions.
@@ -105,7 +105,7 @@ class GeminiService:
         return json.loads(response.text.strip())
 
     def _generate_questions_with_gemini(self, skills: List[str]) -> Dict[str, Any]:
-        model = genai.GenerativeModel("gemini-1.5-flash")
+        model = genai.GenerativeModel(settings.GEMINI_MODEL)
         skills_str = ", ".join(skills) if skills else "General Software Engineering"
         
         prompt = f"""
@@ -146,7 +146,7 @@ class GeminiService:
         return json.loads(response.text.strip())
 
     def _generate_learning_path_with_gemini(self, missing_skills: List[str]) -> Dict[str, Any]:
-        model = genai.GenerativeModel("gemini-1.5-flash")
+        model = genai.GenerativeModel(settings.GEMINI_MODEL)
         missing_skills_str = ", ".join(missing_skills) if missing_skills else "General technical skills"
         
         prompt = f"""
@@ -381,7 +381,7 @@ class GeminiService:
         """
         if self.api_enabled:
             try:
-                model = genai.GenerativeModel("gemini-1.5-flash")
+                model = genai.GenerativeModel(settings.GEMINI_MODEL)
                 eval_prompt = f"""
                 You are an expert technical hiring coach. Evaluate the candidate's response to the following interview question.
                 Provide constructive, actionable feedback and score their response out of 100.
